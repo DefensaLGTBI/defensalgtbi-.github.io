@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Defensa LGTBI+ - Contacto</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f4f4f2; color:#222; }
+    header { background-color:#2b3a2c; color:white; padding:25px 10px; text-align:center; }
+    nav { background-color:#4b6043; display:flex; justify-content:center; flex-wrap:wrap; padding:10px; }
+    nav a { color:white; text-decoration:none; font-weight:bold; margin:5px 15px; transition:color 0.3s; }
+    nav a:hover { color:#d4af37; }
+    section { padding:30px 15px; max-width:900px; margin:auto; }
+    h2 {
