@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Defensa LGTBI+ - Inicio</title>
+  <title>Defensa LGTBI+ – Igualdad y Derechos en las Fuerzas Armadas</title>
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f4f4f2; color:#222; }
     header { background-color:#2b3a2c; color:white; padding:25px 10px; text-align:center; }
@@ -12,6 +12,7 @@
     nav a:hover { color:#d4af37; }
     section { padding:30px 15px; max-width:900px; margin:auto; }
     h2 { color:#2b3a2c; border-bottom:2px solid #4b6043; padding-bottom:5px; margin-bottom:15px; }
+    p { line-height:1.6; }
     footer { background-color:#2b3a2c; color:white; text-align:center; padding:15px; font-size:14px; }
     @media(max-width:600px){ nav { flex-direction:column; } nav a { margin:8px 0; } }
   </style>
@@ -19,8 +20,8 @@
 <body>
 
 <header>
-  <h1>Defensa LGTBI+</h1>
-  <p>Por la Igualdad y los Derechos LGTBI+ en las Fuerzas Armadas de España</p>
+  <h1>Defensa LGTBI+ – Igualdad y Derechos en las Fuerzas Armadas</h1>
+  <p>Por la visibilidad y defensa de los derechos LGTBI+ en el ámbito militar español</p>
 </header>
 
 <nav>
@@ -32,12 +33,22 @@
 
 <section>
   <h2>Quiénes somos</h2>
-  <p>Defensa LGTBI+ es una iniciativa que busca visibilizar y defender los derechos de las personas LGTBI+ dentro de las Fuerzas Armadas españolas.  
-  Promovemos la igualdad, la inclusión y el respeto, apoyándonos en la legislación vigente.</p>
+  <p>
+    Defensa LGTBI+ es una iniciativa sin ánimo de lucro que busca visibilizar y proteger los derechos de las personas LGTBI+ en las Fuerzas Armadas de España.  
+    Trabajamos promoviendo la igualdad, la inclusión y el respeto, apoyándonos en la legislación vigente y colaborando con asociaciones LGTBI+ de ámbito nacional y autonómico.
+  </p>
+
+  <h2>Nuestros objetivos</h2>
+  <ul>
+    <li>Difundir información sobre derechos LGTBI+ en el ámbito militar.</li>
+    <li>Apoyar a militares LGTBI+ y sus familias.</li>
+    <li>Fomentar la visibilidad y la inclusión en todos los niveles de la institución.</li>
+    <li>Conectar con asociaciones nacionales y autonómicas para proyectos de apoyo mutuo.</li>
+  </ul>
 </section>
 
 <footer>
-  © 2025 Defensa LGTBI+ – Asociación por la Igualdad en las Fuerzas Armadas
+  © 2025 Defensa LGTBI+ – Igualdad y Derechos en las Fuerzas Armadas
 </footer>
 
 </body>
