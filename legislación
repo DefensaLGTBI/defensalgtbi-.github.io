@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Defensa LGTBI+ - Legislación</title>
+  <title>Defensa LGTBI+ – Igualdad y Derechos en las Fuerzas Armadas</title>
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f4f4f2; color:#222; }
     header { background-color:#2b3a2c; color:white; padding:25px 10px; text-align:center; }
@@ -14,39 +14,19 @@
     h2 { color:#2b3a2c; border-bottom:2px solid #4b6043; padding-bottom:5px; margin-bottom:15px; }
     h3 { color:#4b6043; margin-top:25px; }
     ul { padding-left:20px; }
-    li { margin-bottom:10px; }
     a { color:#2b3a2c; font-weight:bold; }
     a:hover { text-decoration:underline; }
     footer { background-color:#2b3a2c; color:white; text-align:center; padding:15px; font-size:14px; }
-    .law-card {
-      background:#e6e6d8;
-      border-left:5px solid #4b6043;
-      padding:10px 15px;
-      margin-bottom:15px;
-      border-radius:5px;
-      transition: all 0.3s ease-in-out;
-    }
+    .law-card { background:#e6e6d8; border-left:5px solid #4b6043; padding:10px 15px; margin-bottom:15px; border-radius:5px; }
     .hidden { display:none; }
-    #search-box {
-      display:block;
-      width:100%;
-      max-width:400px;
-      margin:10px auto 25px auto;
-      padding:10px;
-      border-radius:5px;
-      border:1px solid #ccc;
-      font-size:16px;
-    }
-    @media(max-width:600px){
-      nav { flex-direction:column; }
-      nav a { margin:8px 0; }
-    }
+    #search-box { display:block; width:100%; max-width:400px; margin:10px auto 25px auto; padding:10px; border-radius:5px; border:1px solid #ccc; font-size:16px; }
+    @media(max-width:600px){ nav { flex-direction:column; } nav a { margin:8px 0; } }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Defensa LGTBI+</h1>
+  <h1>Defensa LGTBI+ – Igualdad y Derechos en las Fuerzas Armadas</h1>
   <p>Legislación Nacional y Autonómica</p>
 </header>
 
@@ -58,100 +38,88 @@
 </nav>
 
 <section>
-
-  <h2>📚 Buscar legislación</h2>
-  <input type="text" id="search-box" placeholder="Escribe una palabra (ej. 'Madrid', 'trans', 'militar', 'igualdad')...">
+  <h2>Buscar legislación</h2>
+  <input type="text" id="search-box" placeholder="Escribe palabra clave: 'Madrid', 'trans', 'militar', etc.">
 
   <h2>📜 Legislación Nacional</h2>
 
   <div class="law-card">
-    <strong>Ley 4/2023, de 28 de febrero</strong> – de igualdad real y efectiva de las personas trans y garantía de los derechos LGTBI.  
-    <br>📄 <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2023-1845" target="_blank">Ver en BOE</a>
-    <p>Derechos, medidas antidiscriminación y protección en el ámbito laboral, educativo y militar.</p>
+    <strong>Ley 4/2023, de 28 de febrero</strong>  
+    <br>📄 <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2023-1845" target="_blank">Fuente oficial</a>
+    <p>Derechos y medidas antidiscriminación en todos los ámbitos, incluyendo laboral y militar.</p>
   </div>
 
   <div class="law-card">
-    <strong>Constitución Española (1978), Artículo 14</strong> – Igualdad ante la ley sin discriminación.  
-    <br>📄 <a href="https://www.boe.es/legislacion/documentos/ConstitucionCASTELLANO.pdf" target="_blank">Ver texto completo</a>
+    <strong>Constitución Española (1978), Art. 14</strong>  
+    <br>📄 <a href="https://www.boe.es/legislacion/documentos/ConstitucionCASTELLANO.pdf" target="_blank">Fuente oficial</a>
   </div>
 
   <div class="law-card">
-    <strong>Protocolo contra el acoso sexual y por razón de sexo en las Fuerzas Armadas</strong> – Ministerio de Defensa (2015).  
-    <br>📄 <a href="https://www.defensa.gob.es/ca/proteccion/leyes/protocolo-acoso.html" target="_blank">Ver documento</a>
-    <p>Medidas preventivas y de protección en el entorno militar.</p>
+    <strong>Protocolo contra el acoso sexual y por razón de sexo – Ministerio de Defensa (2015)</strong>  
+    <br>📄 <a href="https://www.defensa.gob.es/ca/proteccion/leyes/protocolo-acoso.html" target="_blank">Fuente oficial</a>
   </div>
 
   <div class="law-card">
-    <strong>Ley Orgánica 3/2007</strong> – para la igualdad efectiva de mujeres y hombres.  
-    <br>📄 <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115" target="_blank">Ver en BOE</a>
+    <strong>Ley Orgánica 3/2007</strong>  
+    <br>📄 <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115" target="_blank">Fuente oficial</a>
   </div>
 
   <h2>🏛️ Normativa Autonómica</h2>
-  <p>Selecciona una comunidad autónoma o palabra clave en el buscador para filtrar resultados.</p>
 
   <div class="law-card">
     <strong>Andalucía – Ley 8/2017</strong>  
-    <br>📄 <a href="https://www.juntadeandalucia.es/boja/2017/206/1" target="_blank">Ver en BOJA</a>
-    <p>Garantía de derechos e igualdad de trato de las personas LGTBI y sus familiares.</p>
+    <br>📄 <a href="https://www.juntadeandalucia.es/boja/2017/206/1" target="_blank">Fuente oficial</a>
   </div>
-
   <div class="law-card">
     <strong>Madrid – Ley 2/2016</strong>  
-    <br>📄 <a href="https://www.bocm.es/boletin/CM_Orden_BOCM/2016/03/17/BOCM-20160317-1.PDF" target="_blank">Ver en BOCM</a>
+    <br>📄 <a href="https://www.bocm.es/boletin/CM_Orden_BOCM/2016/03/17/BOCM-20160317-1.PDF" target="_blank">Fuente oficial</a>
   </div>
-
   <div class="law-card">
     <strong>Cataluña – Ley 11/2014</strong>  
-    <br>📄 <a href="https://portaldogc.gencat.cat/utilsEADOP/PDF/6730/1365307.pdf" target="_blank">Ver en DOGC</a>
+    <br>📄 <a href="https://portaldogc.gencat.cat/utilsEADOP/PDF/6730/1365307.pdf" target="_blank">Fuente oficial</a>
   </div>
-
   <div class="law-card">
     <strong>Comunidad Valenciana – Ley 23/2018</strong>  
-    <br>📄 <a href="https://dogv.gva.es/portal/ficha_disposicion_pc.jsp?sig=009326/2018" target="_blank">Ver en DOGV</a>
+    <br>📄 <a href="https://dogv.gva.es/portal/ficha_disposicion_pc.jsp?sig=009326/2018" target="_blank">Fuente oficial</a>
   </div>
-
   <div class="law-card">
     <strong>Galicia – Ley 2/2014</strong>  
-    <br>📄 <a href="https://www.xunta.gal/dog/Publicados/2014/20140507/AnuncioC3B0-290414-0002_es.html" target="_blank">Ver en DOG</a>
+    <br>📄 <a href="https://www.xunta.gal/dog/Publicados/2014/20140507/AnuncioC3B0-290414-0002_es.html" target="_blank">Fuente oficial</a>
   </div>
-
   <div class="law-card">
     <strong>País Vasco – Ley 14/2012</strong>  
-    <br>📄 <a href="https://www.euskadi.eus/y22-bopv/es/bopv2/datos/2012/10/1204652a.shtml" target="_blank">Ver en BOPV</a>
+    <br>📄 <a href="https://www.euskadi.eus/y22-bopv/es/bopv2/datos/2012/10/1204652a.shtml" target="_blank">Fuente oficial</a>
   </div>
-
   <div class="law-card">
     <strong>Canarias – Ley 2/2021</strong>  
-    <br>📄 <a href="https://www.gobiernodecanarias.org/boc/2021/128/001.html" target="_blank">Ver en BOC</a>
+    <br>📄 <a href="https://www.gobiernodecanarias.org/boc/2021/128/001.html" target="_blank">Fuente oficial</a>
   </div>
-
   <div class="law-card">
     <strong>Navarra – Ley Foral 8/2017</strong>  
-    <br>📄 <a href="https://bon.navarra.es/es/anuncio/-/texto/2017/114/1" target="_blank">Ver en BON</a>
+    <br>📄 <a href="https://bon.navarra.es/es/anuncio/-/texto/2017/114/1" target="_blank">Fuente oficial</a>
   </div>
-
   <div class="law-card">
     <strong>Asturias – Ley 8/2021</strong>  
-    <br>📄 <a href="https://sede.asturias.es/bopa/2021/09/03/2021-07841.pdf" target="_blank">Ver en BOPA</a>
+    <br>📄 <a href="https://sede.asturias.es/bopa/2021/09/03/2021-07841.pdf" target="_blank">Fuente oficial</a>
   </div>
 
 </section>
 
 <footer>
-  © 2025 Defensa LGTBI+ – Asociación por la Igualdad en las Fuerzas Armadas
+  © 2025 Defensa LGTBI+ – Igualdad y Derechos en las Fuerzas Armadas
 </footer>
 
 <script>
-  const searchBox = document.getElementById('search-box');
-  const cards = document.querySelectorAll('.law-card');
+const searchBox = document.getElementById('search-box');
+const cards = document.querySelectorAll('.law-card');
 
-  searchBox.addEventListener('input', function() {
-    const query = this.value.toLowerCase();
-    cards.forEach(card => {
-      const text = card.innerText.toLowerCase();
-      card.classList.toggle('hidden', !text.includes(query));
-    });
+searchBox.addEventListener('input', function() {
+  const query = this.value.toLowerCase();
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+    card.classList.toggle('hidden', !text.includes(query));
   });
+});
 </script>
 
 </body>
