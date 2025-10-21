@@ -24,8 +24,23 @@
       padding:10px 15px;
       margin-bottom:15px;
       border-radius:5px;
+      transition: all 0.3s ease-in-out;
     }
-    @media(max-width:600px){ nav { flex-direction:column; } nav a { margin:8px 0; } }
+    .hidden { display:none; }
+    #search-box {
+      display:block;
+      width:100%;
+      max-width:400px;
+      margin:10px auto 25px auto;
+      padding:10px;
+      border-radius:5px;
+      border:1px solid #ccc;
+      font-size:16px;
+    }
+    @media(max-width:600px){
+      nav { flex-direction:column; }
+      nav a { margin:8px 0; }
+    }
   </style>
 </head>
 <body>
@@ -44,85 +59,79 @@
 
 <section>
 
+  <h2>📚 Buscar legislación</h2>
+  <input type="text" id="search-box" placeholder="Escribe una palabra (ej. 'Madrid', 'trans', 'militar', 'igualdad')...">
+
   <h2>📜 Legislación Nacional</h2>
 
   <div class="law-card">
     <strong>Ley 4/2023, de 28 de febrero</strong> – de igualdad real y efectiva de las personas trans y garantía de los derechos LGTBI.  
     <br>📄 <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2023-1845" target="_blank">Ver en BOE</a>
-    <p>Establece derechos y medidas contra la discriminación en todos los ámbitos, incluyendo el laboral, educativo y militar.</p>
+    <p>Derechos, medidas antidiscriminación y protección en el ámbito laboral, educativo y militar.</p>
   </div>
 
   <div class="law-card">
-    <strong>Constitución Española (1978), Artículo 14</strong> – Igualdad ante la ley sin discriminación por razón de nacimiento, raza, sexo, religión u opinión.  
+    <strong>Constitución Española (1978), Artículo 14</strong> – Igualdad ante la ley sin discriminación.  
     <br>📄 <a href="https://www.boe.es/legislacion/documentos/ConstitucionCASTELLANO.pdf" target="_blank">Ver texto completo</a>
   </div>
 
   <div class="law-card">
     <strong>Protocolo contra el acoso sexual y por razón de sexo en las Fuerzas Armadas</strong> – Ministerio de Defensa (2015).  
     <br>📄 <a href="https://www.defensa.gob.es/ca/proteccion/leyes/protocolo-acoso.html" target="_blank">Ver documento</a>
-    <p>Incluye medidas específicas de prevención y protección en el entorno militar.</p>
+    <p>Medidas preventivas y de protección en el entorno militar.</p>
   </div>
 
   <div class="law-card">
     <strong>Ley Orgánica 3/2007</strong> – para la igualdad efectiva de mujeres y hombres.  
     <br>📄 <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115" target="_blank">Ver en BOE</a>
-    <p>Introduce la no discriminación por identidad u orientación sexual en el ámbito laboral y de las administraciones públicas.</p>
   </div>
 
   <h2>🏛️ Normativa Autonómica</h2>
-  <p>Cada comunidad autónoma ha desarrollado su propia legislación para la protección de los derechos LGTBI+. A continuación, se muestran algunas de las más relevantes:</p>
+  <p>Selecciona una comunidad autónoma o palabra clave en el buscador para filtrar resultados.</p>
 
-  <h3>Andalucía</h3>
   <div class="law-card">
-    <strong>Ley 8/2017</strong> – para garantizar los derechos, la igualdad de trato y no discriminación de las personas LGTBI y sus familiares.  
+    <strong>Andalucía – Ley 8/2017</strong>  
     <br>📄 <a href="https://www.juntadeandalucia.es/boja/2017/206/1" target="_blank">Ver en BOJA</a>
+    <p>Garantía de derechos e igualdad de trato de las personas LGTBI y sus familiares.</p>
   </div>
 
-  <h3>Madrid</h3>
   <div class="law-card">
-    <strong>Ley 2/2016</strong> – de identidad y expresión de género e igualdad social y no discriminación.  
+    <strong>Madrid – Ley 2/2016</strong>  
     <br>📄 <a href="https://www.bocm.es/boletin/CM_Orden_BOCM/2016/03/17/BOCM-20160317-1.PDF" target="_blank">Ver en BOCM</a>
   </div>
 
-  <h3>Cataluña</h3>
   <div class="law-card">
-    <strong>Ley 11/2014</strong> – para garantizar los derechos LGTBI y para erradicar la homofobia, la bifobia y la transfobia.  
+    <strong>Cataluña – Ley 11/2014</strong>  
     <br>📄 <a href="https://portaldogc.gencat.cat/utilsEADOP/PDF/6730/1365307.pdf" target="_blank">Ver en DOGC</a>
   </div>
 
-  <h3>Comunidad Valenciana</h3>
   <div class="law-card">
-    <strong>Ley 23/2018</strong> – de igualdad de las personas LGTBI.  
+    <strong>Comunidad Valenciana – Ley 23/2018</strong>  
     <br>📄 <a href="https://dogv.gva.es/portal/ficha_disposicion_pc.jsp?sig=009326/2018" target="_blank">Ver en DOGV</a>
   </div>
 
-  <h3>Galicia</h3>
   <div class="law-card">
-    <strong>Ley 2/2014</strong> – de igualdad de trato y no discriminación por orientación sexual e identidad de género.  
+    <strong>Galicia – Ley 2/2014</strong>  
     <br>📄 <a href="https://www.xunta.gal/dog/Publicados/2014/20140507/AnuncioC3B0-290414-0002_es.html" target="_blank">Ver en DOG</a>
   </div>
 
-  <h3>País Vasco</h3>
   <div class="law-card">
-    <strong>Ley 14/2012</strong> – de no discriminación por motivos de identidad de género y de reconocimiento de los derechos de las personas transexuales.  
+    <strong>País Vasco – Ley 14/2012</strong>  
     <br>📄 <a href="https://www.euskadi.eus/y22-bopv/es/bopv2/datos/2012/10/1204652a.shtml" target="_blank">Ver en BOPV</a>
   </div>
 
-  <h3>Canarias</h3>
   <div class="law-card">
-    <strong>Ley 2/2021</strong> – de igualdad social y no discriminación por razón de identidad de género, expresión de género y características sexuales.  
+    <strong>Canarias – Ley 2/2021</strong>  
     <br>📄 <a href="https://www.gobiernodecanarias.org/boc/2021/128/001.html" target="_blank">Ver en BOC</a>
   </div>
 
-  <h3>Navarra</h3>
   <div class="law-card">
-    <strong>Ley Foral 8/2017</strong> – para la igualdad social de las personas LGTBI+.  
+    <strong>Navarra – Ley Foral 8/2017</strong>  
     <br>📄 <a href="https://bon.navarra.es/es/anuncio/-/texto/2017/114/1" target="_blank">Ver en BON</a>
   </div>
 
-  <h3>Asturias</h3>
   <div class="law-card">
-    <strong>Ley 8/2021</strong> – de garantía de los derechos de las personas trans y LGTBI+.  
+    <strong>Asturias – Ley 8/2021</strong>  
     <br>📄 <a href="https://sede.asturias.es/bopa/2021/09/03/2021-07841.pdf" target="_blank">Ver en BOPA</a>
   </div>
 
@@ -131,6 +140,19 @@
 <footer>
   © 2025 Defensa LGTBI+ – Asociación por la Igualdad en las Fuerzas Armadas
 </footer>
+
+<script>
+  const searchBox = document.getElementById('search-box');
+  const cards = document.querySelectorAll('.law-card');
+
+  searchBox.addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    cards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      card.classList.toggle('hidden', !text.includes(query));
+    });
+  });
+</script>
 
 </body>
 </html>
