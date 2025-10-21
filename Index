@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Defensa LGTBI+ - Inicio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f4f4f2; color:#222; }
+    header { background-color:#2b3a2c; color:white; padding:25px 10px; text-align:center; }
+    nav { background-color:#4b6043; display:flex; justify-content:center; flex-wrap:wrap; padding:10px; }
+    nav a { color:white; text-decoration:none; font-weight:bold; margin:5px 15px; transition:color 0.3s; }
+    nav a:hover { color:#d4af37; }
+    section { padding:30px 15px; max-width:900px; margin:auto; }
+    h2 { color:#2b3a2c; border-bottom:2px solid #4b6043; padding-bottom:5px; margin-bottom:15px; }
+    footer { background-color:#2b3a2c; color:white; text-align:center; padding:15px; font-size:14px; }
+    @media(max-width:600px){ nav { flex-direction:column; } nav a { margin:8px 0; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Defensa LGTBI+</h1>
+  <p>Por la Igualdad y los Derechos LGTBI+ en las Fuerzas Armadas de España</p>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="legislacion.html">Legislación</a>
+  <a href="historias.html">Historias</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+<section>
+  <h2>Quiénes somos</h2>
+  <p>Defensa LGTBI+ es una iniciativa que busca visibilizar y defender los derechos de las personas LGTBI+ dentro de las Fuerzas Armadas españolas.  
+  Promovemos la igualdad, la inclusión y el respeto, apoyándonos en la legislación vigente.</p>
+</section>
+
+<footer>
+  © 2025 Defensa LGTBI+ – Asociación por la Igualdad en las Fuerzas Armadas
+</footer>
+
+</body>
+</html>
