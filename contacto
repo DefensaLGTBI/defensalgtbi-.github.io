@@ -5,10 +5,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Defensa LGTBI+ - Contacto</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f4f4f2; color:#222; }
-    header { background-color:#2b3a2c; color:white; padding:25px 10px; text-align:center; }
-    nav { background-color:#4b6043; display:flex; justify-content:center; flex-wrap:wrap; padding:10px; }
+    body { font-family: Arial, sans-serif; margin:0; background:#f4f4f2; color:#222; }
+    header { background:#2b3a2c; color:white; padding:25px 10px; text-align:center; }
+    nav { background:#4b6043; display:flex; justify-content:center; flex-wrap:wrap; padding:10px; }
     nav a { color:white; text-decoration:none; font-weight:bold; margin:5px 15px; transition:color 0.3s; }
     nav a:hover { color:#d4af37; }
     section { padding:30px 15px; max-width:900px; margin:auto; }
-    h2 {
+    h2, h3 { color:#2b3a2c; border-bottom:2px solid #4b6043; padding-bottom:5px; margin-bottom:15px; }
+    ul { list-style:none; padding-left:0; }
+    li { background-color:#e6e6d8; border-left:5px solid #4b6043; padding:10px; margin-bottom:10px; border-radius:5px; }
+    a { color:#2b3a2c; text-decoration:none; font-weight:bold; }
+    a:hover { text-decoration:underline; }
+    footer { background:#2b3a2c; color:white; text-align:center; padding:15px; font-size:14px; margin-top:30px; }
+    @media(max-width:600px){ nav { flex-direction:column; } nav a { margin:8px 0; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Defensa LGTBI+</h1>
+  <p>Contacto y asociaciones colaboradoras</p>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="legislacion.html">Legislación</a>
+  <a href="historias.html">Historias</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+<section>
+  <h2>Contacto principal</h2>
+  <ul>
+    <li><strong>Correo de contacto oficial:</strong><br>
+      📧 <a href="mailto:defensalgtbi@gmail.com">defensalgtbi@gmail.com</a>
+    </li>
+  </ul>
+
+  <h2>Asociaciones LGTBI+ de ámbito nacional</h2>
+  <ul>
+    <li><strong>COGAM (Colectivo LGTBI+ de Madrid)</strong><br>
+      📧 <a href="mailto:info@cogam.es">info@cogam.es</a> | 🌐 <a href="https://www.cogam.es/" target="_blank">www.cogam.es</a>
+    </li>
+    <li><strong>FELGTBI+ (Federación Estatal LGTBI+)</strong><br>
+      📧 <a href="mailto:felgtbi@felgtbi.org">felgtbi@felgtbi.org</a> | 🌐 <a href="https://www.felgtbi.org/" target="_blank">www.felgtbi.org</a>
+    </li>
+    <li><strong>Fundación Triángulo</strong><br>
+      📧 <a href="mailto:info@fundaciontriangulo.es">info@fundaciontriangulo.es</a> | 🌐 <a href="https://www.fundaciontriangulo.org/" target="_blank">www.fundaciontriangulo.org</a>
+    </li>
+    <li><strong>Arcópoli</strong><br>
+      📧 <a href="mailto:contacto@arcopoli.org">contacto@arcopoli.org</a> | 🌐 <a href="https://www.arcopoli.org/" target="_blank">www.arcopoli.org</a>
+    </li>
+    <li><strong>It Gets Better España</strong><br>
+      📧 <a href="mailto:info@itgetsbetter.es">info@itgetsbetter.es</a> | 🌐 <a href="https://www.itgetsbetter.es/" target="_blank">www.itgetsbetter.es</a>
+    </li>
+  </ul>
+
+  <h2>Asociaciones por Comunidad Autónoma</h2>
+
+  <h3>Andalucía</h3>
+  <ul>
+    <li><strong>Fundación Sevilla Diversidad</strong>  
+      📧 <a href="mailto:info@sevilladiversidad.org">info@sevilladiversidad.org</a> | 🌐 <a href="https://sevilladiversidad.org/" target="_blank">sevilladiversidad.org</a>
+    </li>
+    <li><strong>Ojalá Córdoba</strong>  
+      📧 <a href="mailto:info@ojalacordoba.org">info@ojalacordoba.org</a> | 🌐 <a href="https://ojalacordoba.org/" target="_blank">ojalacordoba.org</a>
+    </li>
+  </ul>
+
+  <h3>Aragón</h3>
+  <ul>
+    <li><strong>Towanda</strong>  
+      📧 <a href="mailto:info@towanda.net">info@towanda.net</a> | 🌐 <a href="https://towanda.net/" target="_blank">towanda.net</a>
+    </li>
+  </ul>
+
+  <h3>Asturias</h3>
+  <ul>
+    <li><strong>Xega</strong>  
+      📧 <a href="mailto:xega@xega.org">xega@xega.org</a> | 🌐 <a href="https://xega.org/" target="_blank">xega.org</a>
+    </li>
+  </ul>
+
+  <h3>Cataluña</h3>
+  <ul>
+    <li><strong>Observatori Contra l’Homofòbia</strong>  
+      📧 <a href="mailto:info@observatori.org">info@observatori.org</a> | 🌐 <a href="https://observatori.org/" target="_blank">observatori.org</a>
+    </li>
+  </ul>
+
+  <h3>Comunidad Valenciana</h3>
+  <ul>
+    <li><strong>Lambda Valencia</strong>  
+      📧 <a href="mailto:lambda@lambdavalencia.org">lambda@lambdavalencia.org</a> | 🌐 <a href="https://lambdavalencia.org/" target="_blank">lambdavalencia.org</a>
+    </li>
+  </ul>
+
+  <h3>Galicia</h3>
+  <ul>
+    <li><strong>Avante LGTBI+</strong>  
+      📧 <a href="mailto:info@avantelgtbi.gal">info@avantelgtbi.gal</a> | 🌐 <a href="https://avantelgtbi.gal/" target="_blank">avantelgtbi.gal</a>
+    </li>
+  </ul>
+
+  <h3>Madrid</h3>
+  <ul>
+    <li><strong>COGAM</strong>  
+      📧 <a href="mailto:info@cogam.es">info@cogam.es</a> | 🌐 <a href="https://www.cogam.es/" target="_blank">cogam.es</a>
+    </li>
+    <li><strong>Arcópoli</strong>  
+      📧 <a href="mailto:contacto@arcopoli.org">contacto@arcopoli.org</a> | 🌐 <a href="https://www.arcopoli.org/" target="_blank">arcopoli.org</a>
+    </li>
+  </ul>
+
+  <h3>Canarias</h3>
+  <ul>
+    <li><strong>Gamá</strong>  
+      📧 <a href="mailto:gama@gama.org">gama@gama.org</a> | 🌐 <a href="https://www.gama.org/" target="_blank">gama.org</a>
+    </li>
+  </ul>
+
+  <h3>País Vasco</h3>
+  <ul>
+    <li><strong>Gehitu</strong>  
+      📧 <a href="mailto:info@gehitu.org">info@gehitu.org</a> | 🌐 <a href="https://gehitu.org/" target="_blank">gehitu.org</a>
+    </li>
+  </ul>
+
+  <h2>Teléfonos de ayuda y emergencias LGTBI+</h2>
+  <ul>
+    <li><strong>Línea 024 (Ministerio de Sanidad):</strong>  
+      Apoyo ante la conducta suicida, 24h, confidencial y gratuita.  
+      ☎️ <a href="tel:024">024</a> | 🌐 <a href="https://www.sanidad.gob.es/linea024/home.htm" target="_blank">sanidad.gob.es/linea024</a>
+    </li>
+    <li><strong>Fundación ANAR:</strong>  
+      Ayuda a niños, niñas y adolescentes LGTBI+ en riesgo.  
+      ☎️ <a href="tel:900202010">900 202 010</a> | 🌐 <a href="https://www.anar.org/" target="_blank">anar.org</a>
+    </li>
+    <li><strong>FELGTBI+ - Línea Arcoíris:</strong>  
+      Apoyo y orientación LGTBI+.  
+      🌐 <a href="https://felgtbi.org/" target="_blank">felgtbi.org</a>
+    </li>
+  </ul>
+
+</section>
+
+<footer>
+  © 2025 Defensa LGTBI+ – Asociación por la Igualdad en las Fuerzas Armadas
+</footer>
+
+</body>
+</html>
