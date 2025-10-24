@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Defensa LGTBI+ – Obras destacadas</title>
+  <title>Defensa LGTBI+ - Obras</title>
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f4f4f2; color:#222; }
     header { background-color:#2b3a2c; color:white; padding:25px 10px; text-align:center; }
     nav { background-color:#4b6043; display:flex; justify-content:center; flex-wrap:wrap; padding:10px; }
     nav a { color:white; text-decoration:none; font-weight:bold; margin:5px 15px; transition:color 0.3s; }
     nav a:hover { color:#d4af37; }
-    section { padding:30px 15px; max-width:1100px; margin:auto; }
-    h2 { color:#2b3a2c; border-bottom:2px solid #4b6043; padding-bottom:5px; margin-bottom:25px; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:25px; }
-    .card { background:white; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); overflow:hidden; display:flex; flex-direction:column; }
-    .card img { width:100%; height:350px; object-fit:cover; }
-    .card-content { padding:15px; flex-grow:1; display:flex; flex-direction:column; justify-content:space-between; }
-    .card h3 { margin-top:0; color:#2b3a2c; font-size:18px; }
-    .card p { font-size:14px; line-height:1.6; }
-    .btn { background-color:#d4af37; color:white; text-decoration:none; font-weight:bold; padding:8px 12px; border-radius:8px; display:inline-block; transition:background-color 0.3s; margin-top:10px; }
-    .btn:hover { background-color:#b8942c; }
+    section { padding:30px 15px; max-width:900px; margin:auto; }
+    h2 { color:#2b3a2c; border-bottom:2px solid #4b6043; padding-bottom:5px; margin-bottom:15px; }
+    article { background-color:#e6e6d8; border-left:5px solid #4b6043; padding:15px; margin-bottom:15px; border-radius:5px; display:flex; align-items:flex-start; gap:15px; }
+    article img { width:120px; height:auto; border-radius:5px; }
+    article div { flex:1; }
+    article h3 { margin-top:0; color:#2b3a2c; }
+    article a { color:#2b3a2c; text-decoration:none; font-weight:bold; }
+    article a:hover { text-decoration:underline; }
+    .btn-top { display:block; width:max-content; margin:30px auto; background-color:#d4af37; color:white; text-decoration:none; font-weight:bold; padding:10px 15px; border-radius:8px; transition:background-color 0.3s; }
+    .btn-top:hover { background-color:#b8942c; }
     footer { background-color:#2b3a2c; color:white; text-align:center; padding:15px; font-size:14px; margin-top:40px; }
-    @media(max-width:600px){ nav { flex-direction:column; } nav a { margin:8px 0; } .card img { height:250px; } }
+    @media(max-width:600px){ article { flex-direction:column; align-items:center; } article img { width:80%; } nav { flex-direction:column; } nav a { margin:8px 0; } }
   </style>
 </head>
-<body>
+<body id="top">
 
 <header>
-  <h1>Defensa LGTBI+ – Obras destacadas</h1>
-  <p>Libros, películas y series con temática LGTBI+ en el ámbito militar</p>
+  <h1>Defensa LGTBI+ – Obras</h1>
+  <p>Libros, películas y series de temática gay y militar</p>
 </header>
 
 <nav>
@@ -40,114 +40,153 @@
 </nav>
 
 <section>
-  <h2>Selección de obras LGTBI+ militares</h2>
-  <div class="grid">
+  <h2>Libros</h2>
 
-    <!-- 1 -->
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/71lA1gUjHtL.jpg" alt="Pink Marine">
-      <div class="card-content">
-        <h3>Pink Marine (Greg Cope White, 2016)</h3>
-        <p>Memorias reales de un joven gay que ingresa en los Marines estadounidenses en los años 80, enfrentándose al rigor militar y al prejuicio, pero encontrando también camaradería y superación personal.</p>
-        <a class="btn" href="https://www.goodreads.com/book/show/27416061-the-pink-marine" target="_blank">+ Ver más</a>
-      </div>
+  <article>
+    <img src="img/pink_marine.jpg" alt="Pink Marine">
+    <div>
+      <h3>Pink Marine</h3>
+      <p>Historia de un joven marine que descubre su orientación sexual mientras sirve en el ejército estadounidense. Acción y aceptación personal.</p>
+      <p><a href="https://www.amazon.com/" target="_blank">Más info</a></p>
     </div>
+  </article>
 
-    <!-- 2 -->
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/81K6iSRxKoL._AC_SL1500_.jpg" alt="Firebird">
-      <div class="card-content">
-        <h3>Firebird (Película, 2021)</h3>
-        <p>Ambientada en una base aérea soviética, narra la historia de amor prohibido entre un joven soldado y un oficial durante la Guerra Fría. Inspirada en hechos reales.</p>
-        <a class="btn" href="https://www.imdb.com/title/tt13109952/" target="_blank">+ Ver más</a>
-      </div>
+  <article>
+    <img src="img/soldiers_heart.jpg" alt="Soldier’s Heart">
+    <div>
+      <h3>Soldier’s Heart</h3>
+      <p>Cartas y testimonios de soldados gays durante guerras del siglo XX. Explora el trauma y la camaradería.</p>
+      <p><a href="https://www.amazon.com/" target="_blank">Más info</a></p>
     </div>
+  </article>
 
-    <!-- 3 -->
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/71bGCLdsz0L._AC_SL1500_.jpg" alt="Boot Netflix">
-      <div class="card-content">
-        <h3>Boot (Serie, Netflix, 2023)</h3>
-        <p>Serie británica que combina drama militar con diversidad sexual. Un retrato realista de jóvenes soldados y su lucha interna por ser quienes son dentro del ejército.</p>
-        <a class="btn" href="https://www.netflix.com" target="_blank">+ Ver más</a>
-      </div>
+  <article>
+    <img src="img/call_me_george.jpg" alt="Call Me George">
+    <div>
+      <h3>Call Me George</h3>
+      <p>Biografía de un oficial canadiense abiertamente homosexual y sus experiencias en las Fuerzas Armadas.</p>
+      <p><a href="https://www.amazon.com/" target="_blank">Más info</a></p>
     </div>
+  </article>
 
-    <!-- 4 -->
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/1/15/Yossi_%282012_film%29_poster.jpg" alt="Yossi">
-      <div class="card-content">
-        <h3>Yossi (Película, 2012)</h3>
-        <p>Secuela de “Yossi & Jagger”, muestra a un médico militar israelí años después de perder a su amante en el frente. Un retrato de duelo y redención en el ejército moderno.</p>
-        <a class="btn" href="https://www.imdb.com/title/tt1932767/" target="_blank">+ Ver más</a>
-      </div>
+  <article>
+    <img src="img/out_in_the_army.jpg" alt="Out in the Army">
+    <div>
+      <h3>Out in the Army</h3>
+      <p>Ensayo sobre la vida de militares LGTBI+ y la política “Don’t Ask, Don’t Tell” en EE. UU.</p>
+      <p><a href="https://www.amazon.com/" target="_blank">Más info</a></p>
     </div>
+  </article>
 
-    <!-- 5 -->
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Serving_in_Silence_poster.jpg" alt="Serving in Silence">
-      <div class="card-content">
-        <h3>Serving in Silence (TV Movie, 1995)</h3>
-        <p>Basada en la historia real de Margarethe Cammermeyer, coronel de la Guardia Nacional estadounidense expulsada por ser lesbiana. Protagonizada por Glenn Close.</p>
-        <a class="btn" href="https://www.imdb.com/title/tt0114408/" target="_blank">+ Ver más</a>
-      </div>
+  <article>
+    <img src="img/hidden_soldiers.jpg" alt="Hidden Soldiers">
+    <div>
+      <h3>Hidden Soldiers</h3>
+      <p>Novela que relata la vida de soldados gays en guerras mundiales y cómo ocultaban su identidad.</p>
+      <p><a href="https://www.amazon.com/" target="_blank">Más info</a></p>
     </div>
+  </article>
 
-    <!-- 6 -->
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Yossi_and_Jagger_poster.jpg" alt="Yossi & Jagger">
-      <div class="card-content">
-        <h3>Yossi & Jagger (Película, 2002)</h3>
-        <p>Historia de amor entre dos oficiales israelíes en la frontera del Líbano. Su relación desafía las normas del ejército y la homofobia institucional.</p>
-        <a class="btn" href="https://www.imdb.com/title/tt0334754/" target="_blank">+ Ver más</a>
-      </div>
+  <h2>Películas</h2>
+
+  <article>
+    <img src="img/serving_in_silence.jpg" alt="Serving in Silence">
+    <div>
+      <h3>Serving in Silence</h3>
+      <p>Película basada en la vida de Margarethe Cammermeyer, coronel lesbiana que luchó por ser readmitida en el Ejército.</p>
+      <p><a href="https://www.imdb.com/title/tt0114435/" target="_blank">Más info</a></p>
     </div>
+  </article>
 
-    <!-- 7 -->
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/7/7f/Moffie_%282019_film%29_poster.jpg" alt="Moffie">
-      <div class="card-content">
-        <h3>Moffie (Película, 2019)</h3>
-        <p>Durante el apartheid sudafricano, un joven soldado homosexual debe ocultar su identidad en un ambiente militar violento y represivo. Basada en las memorias de André Carl van der Merwe.</p>
-        <a class="btn" href="https://www.imdb.com/title/tt8587122/" target="_blank">+ Ver más</a>
-      </div>
+  <article>
+    <img src="img/soldiers_girl.jpg" alt="Soldier’s Girl">
+    <div>
+      <h3>Soldier’s Girl</h3>
+      <p>Historia real de Barry Winchell y Calpernia Addams. Aborda el asesinato por homofobia en el ejército.</p>
+      <p><a href="https://www.imdb.com/title/tt0389722/" target="_blank">Más info</a></p>
     </div>
+  </article>
 
-    <!-- 8 -->
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/2/27/Conduct_unbecoming_film_poster.jpg" alt="Conduct Unbecoming">
-      <div class="card-content">
-        <h3>Conduct Unbecoming (Película, 1975)</h3>
-        <p>Ambientada en un regimiento británico en la India colonial, aborda la rigidez y los abusos dentro del sistema militar. Un clásico con subtexto homoerótico sutil pero poderoso.</p>
-        <a class="btn" href="https://www.imdb.com/title/tt0072792/" target="_blank">+ Ver más</a>
-      </div>
+  <article>
+    <img src="img/firebird.jpg" alt="Firebird">
+    <div>
+      <h3>Firebird</h3>
+      <p>Drama real durante la Guerra Fría en la URSS, sobre un oficial y su romance secreto.</p>
+      <p><a href="https://www.imdb.com/title/tt7461428/" target="_blank">Más info</a></p>
     </div>
+  </article>
 
-    <!-- 9 -->
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/8/88/Private_Romeo_poster.jpg" alt="Private Romeo">
-      <div class="card-content">
-        <h3>Private Romeo (Película, 2011)</h3>
-        <p>Adaptación moderna de Romeo y Julieta ambientada en una academia militar masculina. Cine independiente con enfoque queer y poético.</p>
-        <a class="btn" href="https://www.imdb.com/title/tt1577052/" target="_blank">+ Ver más</a>
-      </div>
+  <article>
+    <img src="img/different_for_girls.jpg" alt="Different for Girls">
+    <div>
+      <h3>Different for Girls</h3>
+      <p>Veterano británico descubre que su antiguo compañero de guerra se ha sometido a transición de género.</p>
+      <p><a href="https://www.imdb.com/title/tt0330488/" target="_blank">Más info</a></p>
     </div>
+  </article>
 
-    <!-- 10 -->
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Stonewall_1995_poster.jpg" alt="Stonewall">
-      <div class="card-content">
-        <h3>Stonewall (Película, 1995)</h3>
-        <p>Inspirada en los disturbios de Stonewall, muestra el viaje de un joven exmilitar que llega a Nueva York buscando aceptación y libertad.</p>
-        <a class="btn" href="https://www.imdb.com/title/tt0114550/" target="_blank">+ Ver más</a>
-      </div>
+  <article>
+    <img src="img/the_pass.jpg" alt="The Pass">
+    <div>
+      <h3>The Pass</h3>
+      <p>Relación romántica entre jóvenes futbolistas militares, conflictos internos y disciplina.</p>
+      <p><a href="https://www.imdb.com/title/tt4944656/" target="_blank">Más info</a></p>
     </div>
+  </article>
 
-  </div>
+  <h2>Series</h2>
+
+  <article>
+    <img src="img/boot.jpg" alt="Boot">
+    <div>
+      <h3>Boot (Netflix)</h3>
+      <p>Serie sobre jóvenes soldados LGBTQ+ y su vida durante el entrenamiento y servicio activo.</p>
+      <p><a href="https://www.netflix.com/title/81417845" target="_blank">Más info</a></p>
+    </div>
+  </article>
+
+  <article>
+    <img src="img/queer_eye.jpg" alt="Queer Eye">
+    <div>
+      <h3>Queer Eye: Military Special</h3>
+      <p>Especial donde los Fab Five apoyan a soldados LGBTQ+ en procesos de aceptación personal.</p>
+      <p><a href="https://www.netflix.com/title/80095920" target="_blank">Más info</a></p>
+    </div>
+  </article>
+
+  <article>
+    <img src="img/tales_of_the_city.jpg" alt="Tales of the City">
+    <div>
+      <h3>Tales of the City</h3>
+      <p>Serie con historias de veteranos homosexuales y su reintegración social tras el servicio militar.</p>
+      <p><a href="https://www.imdb.com/title/tt0187207/" target="_blank">Más info</a></p>
+    </div>
+  </article>
+
+  <article>
+    <img src="img/looking.jpg" alt="Looking">
+    <div>
+      <h3>Looking</h3>
+      <p>Serie con un arco de personajes veteranos LGBTQ+, mostrando la integración social tras la experiencia militar.</p>
+      <p><a href="https://www.hbo.com/looking" target="_blank">Más info</a></p>
+    </div>
+  </article>
+
+  <article>
+    <img src="img/generation_q.jpg" alt="Generation Q">
+    <div>
+      <h3>Generation Q</h3>
+      <p>Secuela de “Queer as Folk” con personajes que incluyen exmilitares gays y trans, explorando relaciones y aceptación social.</p>
+      <p><a href="https://www.showtime.com/shows/queer-as-folk" target="_blank">Más info</a></p>
+    </div>
+  </article>
+
+  <a href="#top" class="btn-top">↑ Subir arriba</a>
+
 </section>
 
 <footer>
-  © 2025 Defensa LGTBI+ – Igualdad y Derechos en las Fuerzas Armadas
+  © 2025 Defensa LGTBI+ – Asociación por la Igualdad en las Fuerzas Armadas
 </footer>
 
 </body>
