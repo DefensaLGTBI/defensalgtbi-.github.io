@@ -3,27 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Defensa LGTBI+ – Obras</title>
+  <title>Defensa LGTBI+ – Obras destacadas</title>
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f4f4f2; color:#222; }
     header { background-color:#2b3a2c; color:white; padding:25px 10px; text-align:center; }
     nav { background-color:#4b6043; display:flex; justify-content:center; flex-wrap:wrap; padding:10px; }
     nav a { color:white; text-decoration:none; font-weight:bold; margin:5px 15px; transition:color 0.3s; }
     nav a:hover { color:#d4af37; }
-    section { padding:30px 15px; max-width:900px; margin:auto; }
-    h2 { color:#2b3a2c; border-bottom:2px solid #4b6043; padding-bottom:5px; margin-bottom:20px; }
-    article { margin-bottom:25px; }
-    article h3 { color:#4b6043; margin-bottom:5px; }
-    article p { line-height:1.6; }
-    footer { background-color:#2b3a2c; color:white; text-align:center; padding:15px; font-size:14px; }
-    @media(max-width:600px){ nav { flex-direction:column; } nav a { margin:8px 0; } }
+    section { padding:30px 15px; max-width:1100px; margin:auto; }
+    h2 { color:#2b3a2c; border-bottom:2px solid #4b6043; padding-bottom:5px; margin-bottom:25px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:25px; }
+    .card { background:white; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); overflow:hidden; display:flex; flex-direction:column; }
+    .card img { width:100%; height:350px; object-fit:cover; }
+    .card-content { padding:15px; flex-grow:1; display:flex; flex-direction:column; justify-content:space-between; }
+    .card h3 { margin-top:0; color:#2b3a2c; font-size:18px; }
+    .card p { font-size:14px; line-height:1.6; }
+    .btn { background-color:#d4af37; color:white; text-decoration:none; font-weight:bold; padding:8px 12px; border-radius:8px; display:inline-block; transition:background-color 0.3s; margin-top:10px; }
+    .btn:hover { background-color:#b8942c; }
+    footer { background-color:#2b3a2c; color:white; text-align:center; padding:15px; font-size:14px; margin-top:40px; }
+    @media(max-width:600px){ nav { flex-direction:column; } nav a { margin:8px 0; } .card img { height:250px; } }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Defensa LGTBI+ – Obras</h1>
-  <p>Libros, series y películas sobre diversidad e identidad en el mundo militar</p>
+  <h1>Defensa LGTBI+ – Obras destacadas</h1>
+  <p>Libros, películas y series con temática LGTBI+ en el ámbito militar</p>
 </header>
 
 <nav>
@@ -35,98 +40,110 @@
 </nav>
 
 <section>
-  <h2>Selección de obras destacadas</h2>
+  <h2>Selección de obras LGTBI+ militares</h2>
+  <div class="grid">
 
-  <article>
-    <h3><em>The Pink Marine</em> – Greg Cope White (2016)</h3>
-    <p>
-      Un joven gay se alista en los Marines estadounidenses en los años 80, enfrentando el choque entre disciplina y autenticidad.
-      Con humor y honestidad, Greg Cope White narra su viaje hacia la autoaceptación dentro de una institución tradicionalmente cerrada.
-      <a href="https://www.goodreads.com/book/show/27217875-the-pink-marine" target="_blank">Leer más</a>
-    </p>
-  </article>
+    <!-- 1 -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71lA1gUjHtL.jpg" alt="Pink Marine">
+      <div class="card-content">
+        <h3>Pink Marine (Greg Cope White, 2016)</h3>
+        <p>Memorias reales de un joven gay que ingresa en los Marines estadounidenses en los años 80, enfrentándose al rigor militar y al prejuicio, pero encontrando también camaradería y superación personal.</p>
+        <a class="btn" href="https://www.goodreads.com/book/show/27416061-the-pink-marine" target="_blank">+ Ver más</a>
+      </div>
+    </div>
 
-  <article>
-    <h3><em>Boot Camp</em> – Serie (Netflix, 2023)</h3>
-    <p>
-      Ficción británica ambientada en un centro de entrenamiento militar. Narra las tensiones personales de varios reclutas,
-      abordando temas de masculinidad, identidad sexual y pertenencia. Una mirada actual al mundo castrense.  
-      <a href="https://www.netflix.com" target="_blank">Ver en Netflix</a>
-    </p>
-  </article>
+    <!-- 2 -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/81K6iSRxKoL._AC_SL1500_.jpg" alt="Firebird">
+      <div class="card-content">
+        <h3>Firebird (Película, 2021)</h3>
+        <p>Ambientada en una base aérea soviética, narra la historia de amor prohibido entre un joven soldado y un oficial durante la Guerra Fría. Inspirada en hechos reales.</p>
+        <a class="btn" href="https://www.imdb.com/title/tt13109952/" target="_blank">+ Ver más</a>
+      </div>
+    </div>
 
-  <article>
-    <h3><em>Serving in Silence</em> – Película (1995)</h3>
-    <p>
-      Basada en la historia real de Margarethe Cammermeyer, una oficial del Ejército de EE. UU. expulsada por ser lesbiana.
-      Protagonizada por Glenn Close, fue una de las primeras producciones en denunciar la política militar de exclusión.  
-      <a href="https://www.imdb.com/title/tt0114453/" target="_blank">Fuente IMDb</a>
-    </p>
-  </article>
+    <!-- 3 -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71bGCLdsz0L._AC_SL1500_.jpg" alt="Boot Netflix">
+      <div class="card-content">
+        <h3>Boot (Serie, Netflix, 2023)</h3>
+        <p>Serie británica que combina drama militar con diversidad sexual. Un retrato realista de jóvenes soldados y su lucha interna por ser quienes son dentro del ejército.</p>
+        <a class="btn" href="https://www.netflix.com" target="_blank">+ Ver más</a>
+      </div>
+    </div>
 
-  <article>
-    <h3><em>Conduct Unbecoming</em> – Randy Shilts (1993)</h3>
-    <p>
-      Investigación exhaustiva sobre la persecución de personas homosexuales en las fuerzas armadas de EE. UU.
-      Una obra clave del periodismo LGTBI+ que documenta décadas de discriminación y resistencia.  
-      <a href="https://www.goodreads.com/book/show/547598.Conduct_Unbecoming" target="_blank">Más información</a>
-    </p>
-  </article>
+    <!-- 4 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/1/15/Yossi_%282012_film%29_poster.jpg" alt="Yossi">
+      <div class="card-content">
+        <h3>Yossi (Película, 2012)</h3>
+        <p>Secuela de “Yossi & Jagger”, muestra a un médico militar israelí años después de perder a su amante en el frente. Un retrato de duelo y redención en el ejército moderno.</p>
+        <a class="btn" href="https://www.imdb.com/title/tt1932767/" target="_blank">+ Ver más</a>
+      </div>
+    </div>
 
-  <article>
-    <h3><em>Moffie</em> – Película (Sudáfrica, 2019)</h3>
-    <p>
-      Ambientada durante el apartheid, sigue a un joven recluta sudafricano que debe ocultar su orientación sexual.
-      Con una estética potente y actuaciones intensas, es un retrato brutal del miedo y la represión.  
-      <a href="https://www.imdb.com/title/tt10199590/" target="_blank">Fuente IMDb</a>
-    </p>
-  </article>
+    <!-- 5 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Serving_in_Silence_poster.jpg" alt="Serving in Silence">
+      <div class="card-content">
+        <h3>Serving in Silence (TV Movie, 1995)</h3>
+        <p>Basada en la historia real de Margarethe Cammermeyer, coronel de la Guardia Nacional estadounidense expulsada por ser lesbiana. Protagonizada por Glenn Close.</p>
+        <a class="btn" href="https://www.imdb.com/title/tt0114408/" target="_blank">+ Ver más</a>
+      </div>
+    </div>
 
-  <article>
-    <h3><em>Soldier’s Girl</em> – Película (2003)</h3>
-    <p>
-      Relata el asesinato del soldado Barry Winchell, tras descubrirse su relación con una mujer trans.
-      Un caso real que provocó debate nacional y marcó un antes y un después en la visibilidad trans en el ejército.  
-      <a href="https://www.imdb.com/title/tt0324013/" target="_blank">Fuente IMDb</a>
-    </p>
-  </article>
+    <!-- 6 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Yossi_and_Jagger_poster.jpg" alt="Yossi & Jagger">
+      <div class="card-content">
+        <h3>Yossi & Jagger (Película, 2002)</h3>
+        <p>Historia de amor entre dos oficiales israelíes en la frontera del Líbano. Su relación desafía las normas del ejército y la homofobia institucional.</p>
+        <a class="btn" href="https://www.imdb.com/title/tt0334754/" target="_blank">+ Ver más</a>
+      </div>
+    </div>
 
-  <article>
-    <h3><em>Firebird</em> – Película (2021)</h3>
-    <p>
-      Historia de amor entre dos soldados soviéticos en plena Guerra Fría. Inspirada en hechos reales,
-      destaca por su fotografía y su mensaje sobre el amor frente al miedo.  
-      <a href="https://www.imdb.com/title/tt7096250/" target="_blank">Fuente IMDb</a>
-    </p>
-  </article>
+    <!-- 7 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/7/7f/Moffie_%282019_film%29_poster.jpg" alt="Moffie">
+      <div class="card-content">
+        <h3>Moffie (Película, 2019)</h3>
+        <p>Durante el apartheid sudafricano, un joven soldado homosexual debe ocultar su identidad en un ambiente militar violento y represivo. Basada en las memorias de André Carl van der Merwe.</p>
+        <a class="btn" href="https://www.imdb.com/title/tt8587122/" target="_blank">+ Ver más</a>
+      </div>
+    </div>
 
-  <article>
-    <h3><em>My Policeman</em> – Película (2022)</h3>
-    <p>
-      Drama británico ambientado en los años 50. Un policía casado reprime su amor por otro hombre,
-      reflejando el conflicto entre deber, amor y represión en entornos uniformados.  
-      <a href="https://www.imdb.com/title/tt13139228/" target="_blank">Fuente IMDb</a>
-    </p>
-  </article>
+    <!-- 8 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/27/Conduct_unbecoming_film_poster.jpg" alt="Conduct Unbecoming">
+      <div class="card-content">
+        <h3>Conduct Unbecoming (Película, 1975)</h3>
+        <p>Ambientada en un regimiento británico en la India colonial, aborda la rigidez y los abusos dentro del sistema militar. Un clásico con subtexto homoerótico sutil pero poderoso.</p>
+        <a class="btn" href="https://www.imdb.com/title/tt0072792/" target="_blank">+ Ver más</a>
+      </div>
+    </div>
 
-  <article>
-    <h3><em>Breaking Ranks</em> – Melissa Graves (2018)</h3>
-    <p>
-      Novela romántica que narra la relación entre dos oficiales del ejército estadounidense.
-      Una historia de amor y lealtad ambientada en un contexto de jerarquías y deber.  
-      <a href="https://www.goodreads.com/book/show/39886743-breaking-ranks" target="_blank">Leer más</a>
-    </p>
-  </article>
+    <!-- 9 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/88/Private_Romeo_poster.jpg" alt="Private Romeo">
+      <div class="card-content">
+        <h3>Private Romeo (Película, 2011)</h3>
+        <p>Adaptación moderna de Romeo y Julieta ambientada en una academia militar masculina. Cine independiente con enfoque queer y poético.</p>
+        <a class="btn" href="https://www.imdb.com/title/tt1577052/" target="_blank">+ Ver más</a>
+      </div>
+    </div>
 
-  <article>
-    <h3><em>Unconditional</em> – Película (2023)</h3>
-    <p>
-      Inspirada en historias reales, sigue a un veterano militar británico que se enfrenta a su pasado y su identidad
-      tras enamorarse de un compañero de unidad. Combina emoción, redención y aceptación.  
-      <a href="https://www.imdb.com/title/tt11772194/" target="_blank">Fuente IMDb</a>
-    </p>
-  </article>
+    <!-- 10 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Stonewall_1995_poster.jpg" alt="Stonewall">
+      <div class="card-content">
+        <h3>Stonewall (Película, 1995)</h3>
+        <p>Inspirada en los disturbios de Stonewall, muestra el viaje de un joven exmilitar que llega a Nueva York buscando aceptación y libertad.</p>
+        <a class="btn" href="https://www.imdb.com/title/tt0114550/" target="_blank">+ Ver más</a>
+      </div>
+    </div>
 
+  </div>
 </section>
 
 <footer>
