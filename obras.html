@@ -8,21 +8,26 @@
     body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f4f4f2; color:#222; }
     header { background-color:#2b3a2c; color:white; padding:25px 10px; text-align:center; }
     nav.main-nav { background-color:#4b6043; display:flex; justify-content:center; flex-wrap:wrap; padding:10px; }
-    nav.main-nav a, nav.section-nav a { color:black; text-decoration:none; font-weight:bold; margin:5px 15px; transition:color 0.3s; }
+    nav.main-nav a, nav.section-nav a { color:white; text-decoration:none; font-weight:bold; margin:5px 15px; transition:color 0.3s; }
     nav.main-nav a:hover, nav.section-nav a:hover { color:#d4af37; }
-    nav.section-nav { justify-content:center; margin-bottom:20px; }
+    nav.section-nav { display:flex; justify-content:center; flex-wrap:wrap; margin-bottom:20px; background-color:#e6e6d8; padding:10px; border-radius:8px; }
     section { padding:30px 15px; max-width:900px; margin:auto; }
     h2 { color:#2b3a2c; border-bottom:2px solid #4b6043; padding-bottom:5px; margin-bottom:15px; }
     article { background-color:#e6e6d8; border-left:5px solid #4b6043; padding:15px; margin-bottom:15px; border-radius:5px; display:flex; align-items:flex-start; gap:15px; }
-    article img { width:120px; height:auto; border-radius:5px; }
+    article img { width:100px; height:auto; border-radius:5px; }
     article div { flex:1; }
     article h3 { margin-top:0; color:#2b3a2c; }
     article a { color:#2b3a2c; text-decoration:none; font-weight:bold; }
     article a:hover { text-decoration:underline; }
-    .btn-top { display:block; width:max-content; margin:20px auto; background-color:#d4af37; color:white; text-decoration:none; font-weight:bold; padding:10px 15px; border-radius:8px; transition:background-color 0.3s; }
+    .btn-top { display:block; width:max-content; margin:20px auto; background-color:#d4af37; color:white; text-decoration:none; font-weight:bold; padding:10px 15px; border-radius:8px; transition:background-color 0.3s; text-align:center; }
     .btn-top:hover { background-color:#b8942c; }
     footer { background-color:#2b3a2c; color:white; text-align:center; padding:15px; font-size:14px; margin-top:40px; }
-    @media(max-width:600px){ article { flex-direction:column; align-items:center; } article img { width:80%; } nav.main-nav, nav.section-nav { flex-direction:column; } nav.main-nav a, nav.section-nav a { margin:8px 0; } }
+    @media(max-width:600px){ 
+      article { flex-direction:column; align-items:center; text-align:center; } 
+      article img { width:80%; } 
+      nav.main-nav, nav.section-nav { flex-direction:column; } 
+      nav.main-nav a, nav.section-nav a { margin:8px 0; } 
+    }
   </style>
 </head>
 <body id="top">
@@ -47,6 +52,7 @@
     <a href="#peliculas">Películas</a>
     <a href="#series">Series</a>
   </nav>
+  
  <h2 id="libros">Libros</h2>
 
 <article>
@@ -139,7 +145,7 @@
   </div>
 </article>
 
-<a href="#top" class="btn-top">↑ Subir arriba</
+ <a href="#top" class="btn-top">↑ Subir arriba</a>
 
  <h2 id="peliculas">Películas</h2>
 
@@ -233,7 +239,7 @@
   </div>
 </article>
 
-<a href="#top" class="btn-top">↑ Subir arriba</
+<a href="#top" class="btn-top">↑ Subir arriba</a>
 
 <h2 id="series">Series</h2>
 
@@ -327,7 +333,7 @@
   </div>
 </article>
 
-<a href="#top" class="btn-top">↑ Subir arriba</a>
+  <a href="#top" class="btn-top">↑ Subir arriba</a>
 
 </section>
 
