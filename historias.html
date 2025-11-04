@@ -3,97 +3,231 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Defensa LGTBI+ - Historias</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f4f4f2; color:#222; }
-    header { background-color:#2b3a2c; color:white; padding:25px 10px; text-align:center; }
-    nav { background-color:#4b6043; display:flex; justify-content:center; flex-wrap:wrap; padding:10px; }
-    nav a { color:white; text-decoration:none; font-weight:bold; margin:5px 15px; transition:color 0.3s; }
-    nav a:hover { color:#d4af37; }
-    section { padding:30px 15px; max-width:900px; margin:auto; }
-    h2 { color:#2b3a2c; border-bottom:2px solid #4b6043; padding-bottom:5px; margin-bottom:15px; }
-    h3 { color:#2b3a2c; margin-top:0; }
-    article { background-color:#e6e6d8; border-left:5px solid #4b6043; padding:15px; margin-bottom:15px; border-radius:5px; }
-    article a { color:#2b3a2c; text-decoration:none; font-weight:bold; }
-    article a:hover { text-decoration:underline; }
-    .btn-top { display:block; width:max-content; margin:30px auto; background-color:#d4af37; color:white; text-decoration:none; font-weight:bold; padding:10px 15px; border-radius:8px; transition:background-color 0.3s; }
-    .btn-top:hover { background-color:#b8942c; }
-    .indice {
-  background-color: #e6e6d8;
-  padding: 10px;
-  border-left: 5px solid #4b6043;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.indice a {
-  color: #2b3a2c;
-  text-decoration: none;
-  font-weight: bold;
-}
-.indice a:hover {
-  text-decoration: underline;
-  color: #d4af37;
-}
+  <title>Defensa LGTBI+ – Historias</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/defensa_lgtbi_shield_128.png">
 
-    footer { background-color:#2b3a2c; color:white; text-align:center; padding:15px; font-size:14px; margin-top:40px; }
-    @media(max-width:600px){ nav { flex-direction:column; } nav a { margin:8px 0; } }
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f2;
+      color: #222;
+    }
+
+    header {
+      background-color: #2b3a2c;
+      color: white;
+      padding: 30px 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img {
+      width: 100px;
+      height: auto;
+      position: absolute;
+      left: 20px;
+      top: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #d4af37;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.1em;
+      color: #cfd8cf;
+    }
+
+    nav {
+      background-color: #4b6043;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px 15px;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2b3a2c;
+      border-bottom: 3px solid #4b6043;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      color: #2b3a2c;
+      margin-top: 0;
+    }
+
+    article {
+      background-color: #e6e6d8;
+      border-left: 5px solid #4b6043;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+
+    article a {
+      color: #2b3a2c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    article a:hover {
+      text-decoration: underline;
+      color: #d4af37;
+    }
+
+    .indice {
+      background-color: #e6e6d8;
+      padding: 10px;
+      border-left: 5px solid #4b6043;
+      border-radius: 5px;
+      margin-bottom: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .indice strong {
+      width: 100%;
+      color: #2b3a2c;
+      margin-bottom: 5px;
+    }
+
+    .indice a {
+      color: #2b3a2c;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #f7f7f0;
+      padding: 3px 6px;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+
+    .indice a:hover {
+      background-color: #d4af37;
+      color: white;
+    }
+
+    .btn-top {
+      display: inline-block;
+      margin: 40px auto 0;
+      background-color: #d4af37;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-top:hover {
+      background-color: #b8942c;
+    }
+
+    footer {
+      background-color: #2b3a2c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        position: static;
+        display: block;
+        margin: 0 auto 10px;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 8px 0;
+      }
+    }
   </style>
 </head>
-<body>
 
-<header>
-  <h1>Defensa LGTBI+</h1>
-  <p>Historias de Militares LGTBI+</p>
-</header>
+<body id="top">
 
-<nav>
-  <a href="index.html">Inicio</a>
-  <a href="legislacion.html">Legislación</a>
-  <a href="historias.html">Historias</a>
-  <a href="obras.html">Obras</a>
-  <a href="contacto.html">Contacto</a>
-</nav>
+  <header>
+    <img src="img/defensa_lgtbi_shield_256.png" alt="Escudo Defensa LGTBI+">
+    <h1>Defensa LGTBI+</h1>
+    <p>Historias de Militares LGTBI+</p>
+  </header>
 
-<section>
-  <h2>Biografías de militares LGTBI+ a lo largo de la historia</h2>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="legislacion.html">Legislación</a>
+    <a href="historias.html">Historias</a>
+    <a href="obras.html">Obras</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
 
-  <!-- Índice de navegación rápida -->
-  <div class="indice">
-    <strong>Ir a biografía:</strong>
-    <a href="#bio1">1. Friedrich Wilhelm von Steuben</a>
-    <a href="#bio2">2. Albert D. J. Cashier</a>
-    <a href="#bio3">3. Ethel Mary Smyth</a>
-    <a href="#bio4">4. Margarethe Cammermeyer</a>
-    <a href="#bio5">5. Leonard Matlovich</a>
-    <a href="#bio6">6. Perry Watkins</a>
-    <a href="#bio7">7. James Stubblebine</a>
-    <a href="#bio8">8. Wim de Bruin</a>
-    <a href="#bio9">9. Deborah Sampson</a>
-    <a href="#bio10">10. James Wharton</a>
-    <a href="#bio11">11. Dan Choi</a>
-    <a href="#bio12">12. Chelsea Manning</a>
-    <a href="#bio13">13. Shereef Moustafa</a>
-    <a href="#bio14">14. Petty Officer Nitzan Levy</a>
-    <a href="#bio15">15. Patricia Campos Doménech</a>
-    <a href="#bio16">16. Alex Minsky</a>
-    <a href="#bio17">17. José Luis Ramírez</a>
-    <a href="#bio18">18. Sarah L. Blum</a>
-    <a href="#bio19">19. Craig Jones</a>
-    <a href="#bio20">20. Lucía Méndez</a>
-    <a href="#bio21">21. Céleste Moreau</a>
-    <a href="#bio22">22. Pedro Aravena</a>
-    <a href="#bio23">23. Martina Keller</a>
-    <a href="#bio24">24. Marcus McKenzie</a>
-    <a href="#bio25">25. Raúl Sánchez García</a>
-    <a href="#bio26">26. James Kirkpatrick</a>
-    <a href="#bio27">27. Ana López</a>
-    <a href="#bio28">28. Mark Thompson</a>
-    <a href="#bio29">29. Sophie Dubois</a>
-    <a href="#bio30">30. Erik Johansson</a>
-  </div>
+  <section>
+    <h2>Biografías de militares LGTBI+ a lo largo de la historia</h2>
+
+    <div class="indice">
+      <strong>Ir a biografía:</strong>
+      <a href="#bio1">1. Friedrich Wilhelm von Steuben</a>
+      <a href="#bio2">2. Albert D. J. Cashier</a>
+      <a href="#bio3">3. Ethel Mary Smyth</a>
+      <a href="#bio4">4. Margarethe Cammermeyer</a>
+      <a href="#bio5">5. Leonard Matlovich</a>
+      <a href="#bio6">6. Perry Watkins</a>
+      <a href="#bio7">7. James Stubblebine</a>
+      <a href="#bio8">8. Wim de Bruin</a>
+      <a href="#bio9">9. Deborah Sampson</a>
+      <a href="#bio10">10. James Wharton</a>
+      <a href="#bio11">11. Dan Choi</a>
+      <a href="#bio12">12. Chelsea Manning</a>
+      <a href="#bio13">13. Shereef Moustafa</a>
+      <a href="#bio14">14. Nitzan Levy</a>
+      <a href="#bio15">15. Patricia Campos Doménech</a>
+      <a href="#bio16">16. Alex Minsky</a>
+      <a href="#bio17">17. José Luis Ramírez</a>
+      <a href="#bio18">18. Sarah L. Blum</a>
+      <a href="#bio19">19. Craig Jones</a>
+      <a href="#bio20">20. Lucía Méndez</a>
+      <a href="#bio21">21. Céleste Moreau</a>
+      <a href="#bio22">22. Pedro Aravena</a>
+      <a href="#bio23">23. Martina Keller</a>
+      <a href="#bio24">24. Marcus McKenzie</a>
+      <a href="#bio25">25. Raúl Sánchez García</a>
+      <a href="#bio26">26. James Kirkpatrick</a>
+      <a href="#bio27">27. Ana López</a>
+      <a href="#bio28">28. Mark Thompson</a>
+      <a href="#bio29">29. Sophie Dubois</a>
+      <a href="#bio30">30. Erik Johansson</a>
+    </div>
 
   <article id="bio1">
     <h3>1. Friedrich Wilhelm von Steuben (1730–1794) – Prusia / EE. UU.</h3>
