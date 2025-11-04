@@ -28,7 +28,28 @@
       nav.main-nav, nav.section-nav { flex-direction:column; } 
       nav.main-nav a, nav.section-nav a { margin:8px 0; } 
     }
-  </style>
+  <style>
+.btn-donar {
+  background-color: #d4af37;
+  color: #2b3a2c;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.btn-donar:hover {
+  background-color: #b8942c;
+  transform: translateY(-2px);
+}
+@media (max-width: 600px) {
+  .btn-donar {
+    margin-top: 8px;
+    display: inline-block;
+  }
+}
+</style>
+
 </head>
 <body id="top">
 
