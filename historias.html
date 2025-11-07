@@ -163,6 +163,56 @@
       margin-top: 40px;
     }
 
+.btn-float {
+position: fixed;
+bottom: 25px;
+right: 25px;
+background-color: #d4af37;
+color: white;
+padding: 12px 16px;
+border-radius: 50%;
+text-decoration: none;
+font-weight: bold;
+box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+font-size: 20px;
+z-index: 9999;
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.4s ease, transform 0.2s ease;
+}
+
+.btn-float.show {
+opacity: 1;
+pointer-events: auto;
+transform: translateY(0);
+}
+
+.btn-float:hover {
+background-color: #b8942c;
+transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+.btn-float {
+bottom: 15px;
+right: 15px;
+font-size: 18px;
+}
+}
+
+<a href="#top" class="btn-float" id="btnTop" title="Volver arriba">↑</a>
+
+<script>
+  const btn = document.getElementById("btnTop");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 250) {
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  });
+</script>
+
     .btn-donar {
       background-color: #d4af37;
       color: #2b3a2c;
