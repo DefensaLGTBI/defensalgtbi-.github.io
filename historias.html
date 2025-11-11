@@ -16,6 +16,7 @@
       padding: 0;
       background-color: #f4f4f2;
       color: #222;
+      scroll-behavior: smooth;
     }
 
     header {
@@ -24,14 +25,6 @@
       padding: 30px 10px;
       text-align: center;
       position: relative;
-    }
-
-    header img {
-      width: 100px;
-      height: auto;
-      position: absolute;
-      left: 20px;
-      top: 15px;
     }
 
     header h1 {
@@ -82,45 +75,22 @@
       text-align: center;
     }
 
-    h3 {
-      color: #2b3a2c;
-      margin-top: 0;
-    }
-
-    article {
-      background-color: #e6e6d8;
-      border-left: 5px solid #4b6043;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-    }
-
-    article a {
-      color: #2b3a2c;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    article a:hover {
-      text-decoration: underline;
-      color: #d4af37;
-    }
-
     .indice {
       background-color: #e6e6d8;
-      padding: 10px;
+      padding: 12px;
       border-left: 5px solid #4b6043;
       border-radius: 5px;
       margin-bottom: 25px;
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px;
+      justify-content: center;
     }
 
     .indice strong {
       width: 100%;
+      text-align: center;
       color: #2b3a2c;
-      margin-bottom: 5px;
     }
 
     .indice a {
@@ -128,7 +98,7 @@
       text-decoration: none;
       font-weight: bold;
       background-color: #f7f7f0;
-      padding: 3px 6px;
+      padding: 4px 8px;
       border-radius: 5px;
       transition: background-color 0.2s;
     }
@@ -138,80 +108,18 @@
       color: white;
     }
 
-    .btn-top {
-      display: inline-block;
-      margin: 40px auto 0;
-      background-color: #d4af37;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 12px 20px;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-
-    .btn-top:hover {
-      background-color: #b8942c;
-    }
-
-    footer {
-      background-color: #2b3a2c;
-      color: white;
-      text-align: center;
+    article {
+      background-color: #e6e6d8;
+      border-left: 5px solid #4b6043;
       padding: 15px;
-      font-size: 0.9em;
-      margin-top: 40px;
+      margin-bottom: 18px;
+      border-radius: 5px;
     }
 
-.btn-float {
-position: fixed;
-bottom: 25px;
-right: 25px;
-background-color: #d4af37;
-color: white;
-padding: 12px 16px;
-border-radius: 50%;
-text-decoration: none;
-font-weight: bold;
-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-font-size: 20px;
-z-index: 9999;
-opacity: 0;
-pointer-events: none;
-transition: opacity 0.4s ease, transform 0.2s ease;
-}
-
-.btn-float.show {
-opacity: 1;
-pointer-events: auto;
-transform: translateY(0);
-}
-
-.btn-float:hover {
-background-color: #b8942c;
-transform: translateY(-2px);
-}
-
-@media (max-width: 600px) {
-.btn-float {
-bottom: 15px;
-right: 15px;
-font-size: 18px;
-}
-}
-
-<a href="#top" class="btn-float" id="btnTop" title="Volver arriba">↑</a>
-
-<script>
-  const btn = document.getElementById("btnTop");
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 250) {
-      btn.classList.add("show");
-    } else {
-      btn.classList.remove("show");
+    article h3 {
+      margin-top: 0;
+      color: #2b3a2c;
     }
-  });
-</script>
 
     .btn-donar {
       background-color: #d4af37;
@@ -228,30 +136,60 @@ font-size: 18px;
       transform: translateY(-2px);
     }
 
+    footer {
+      background-color: #2b3a2c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    /* BOTÓN FLOTANTE */
+    .btn-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #d4af37;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+      font-size: 20px;
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease, transform 0.2s ease;
+    }
+
+    .btn-float.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .btn-float:hover {
+      background-color: #b8942c;
+      transform: translateY(-2px);
+    }
+
     @media (max-width: 600px) {
-      header img {
-        position: static;
-        display: block;
-        margin: 0 auto 10px;
-      }
-      nav {
-        flex-direction: column;
-      }
-      nav a {
-        margin: 8px 0;
-      }
-      .btn-donar {
-        margin-top: 8px;
-        display: inline-block;
+      .btn-float {
+        bottom: 15px;
+        right: 15px;
+        font-size: 18px;
       }
     }
+
   </style>
 </head>
 
 <body id="top">
 
   <header>
-          <h1>Defensa LGTBI+</h1>
+    <h1>Defensa LGTBI+</h1>
     <p>Historias de Militares LGTBI+</p>
   </header>
 
@@ -264,7 +202,8 @@ font-size: 18px;
     <a href="donaciones.html" class="btn-donar">💛 Donar</a>
   </nav>
 
-    <section>
+  <section>
+
     <h2>Biografías de militares LGTBI+ a lo largo de la historia</h2>
  
    <div class="indice"> <strong>Ir a biografía:</strong> <a href="#bio1">1</a> <a href="#bio10">10</a> <a href="#bio20">20</a> <a href="#bio30">30</a> <a href="#bio40">40</a> <a href="#top">Volver arriba</a> </div>
@@ -553,11 +492,28 @@ font-size: 18px;
 
 </section>
 
-  <a class="btn-top" href="#top">↑ Volver arriba</a>
+<!-- Botón estático opcional -->
+<a class="btn-top" href="#top">↑ Volver arriba</a>
 
-  <footer>
-    © 2025 Defensa LGTBI+ – Asociación por la Igualdad en las Fuerzas Armadas
-  </footer>
+<!-- Botón flotante que aparece al hacer scroll -->
+<a href="#top" class="btn-float" id="btnTop" title="Volver arriba">↑</a>
+
+<footer>
+  © 2025 Defensa LGTBI+ – Asociación por la Igualdad en las Fuerzas Armadas
+</footer>
+
+<script>
+  // Mostrar/ocultar botón flotante según scroll
+  const btn = document.getElementById("btnTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 250) {
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  });
+</script>
 
 </body>
 </html>
