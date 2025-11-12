@@ -51,7 +51,26 @@
       text-align: center;
     }
 
-    /* ÍNDICE visual */
+    /* --- Buscador --- */
+    .bio-search {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 15px auto 25px auto;
+      padding: 10px 12px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      text-align: center;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .bio-search:focus {
+      outline: none;
+      border-color: #4b6043;
+      box-shadow: 0 0 6px rgba(75, 96, 67, 0.3);
+    }
+
+    /* --- Índice visual --- */
     .indice {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -84,6 +103,33 @@
       background-color: #d4af37;
       color: white;
       transform: translateY(-2px);
+    }
+
+    /* --- Índice de biografías tipo tarjetas --- */
+    .bio-index {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin-bottom: 35px;
+    }
+    .bio-index a {
+      display: block;
+      background: #f7f7f0;
+      border: 2px solid #dcdcca;
+      border-radius: 10px;
+      padding: 10px 14px;
+      color: #2b3a2c;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+    .bio-index a:hover {
+      background: #d4af37;
+      color: white;
+      border-color: #b8942c;
+      transform: translateY(-2px);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
     }
 
     article {
@@ -145,25 +191,13 @@
 
     @media (max-width: 600px) {
       .indice { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+      .bio-index { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
       .btn-float { bottom: 15px; right: 15px; }
     }
   </style>
 </head>
 
 <body id="top">
-  
-<script>
-  const bioSearch = document.getElementById('bioSearch');
-  const bioLinks = document.querySelectorAll('#bioIndex a');
-
-  bioSearch.addEventListener('input', function () {
-    const query = this.value.toLowerCase();
-    bioLinks.forEach(link => {
-      const text = link.textContent.toLowerCase();
-      link.style.display = text.includes(query) ? 'block' : 'none';
-    });
-  });
-</script>
 
 <header>
   <h1>Defensa LGTBI+</h1>
@@ -179,63 +213,20 @@
   <a href="donaciones.html" class="btn-donar">💛 Donar</a>
 </nav>
 
- <h2>Biografías de militares LGTBI+ a lo largo de la historia</h2>
+<section>
+  <h2>Biografías de militares LGTBI+ a lo largo de la historia</h2>
 
   <input type="text" id="bioSearch" placeholder="Buscar por nombre, país o número..." class="bio-search">
-  .bio-search {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  margin: 15px auto 25px auto;
-  padding: 10px 12px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  text-align: center;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-.bio-search:focus {
-  outline: none;
-  border-color: #4b6043;
-  box-shadow: 0 0 6px rgba(75, 96, 67, 0.3);
-}
 
-/* --- Índice de biografías tipo tarjetas --- */
-.bio-index {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 12px;
-  margin-bottom: 35px;
-}
+  <div class="indice">
+    <strong>Ir a biografía:</strong>
+    <a href="#bio1">1</a>
+    <a href="#bio10">10</a>
+    <a href="#bio20">20</a>
+    <a href="#bio30">30</a>
+    <a href="#bio40">40</a>
+  </div>
 
-.bio-index a {
-  display: block;
-  background: #f7f7f0;
-  border: 2px solid #dcdcca;
-  border-radius: 10px;
-  padding: 10px 14px;
-  color: #2b3a2c;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.25s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-.bio-index a:hover {
-  background: #d4af37;
-  color: white;
-  border-color: #b8942c;
-  transform: translateY(-2px);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 600px) {
-  .bio-index {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
-}
-  <div class="indice"> <strong>Ir a biografía:</strong> <a href="#bio1">1</a> <a href="#bio10">10</a> <a href="#bio20">20</a> <a href="#bio30">30</a> <a href="#bio40">40</a> </div>
-  
   <div class="bio-index" id="bioIndex">
   <a href="#bio1">1. Friedrich Wilhelm von Steuben – Prusia / EE. UU.</a>
   <a href="#bio2">2. Albert D. J. Cashier – Irlanda / EE. UU.</a>
@@ -519,8 +510,8 @@
   <p><a href="https://www.defensa.gob.cl/noticias/ministerio-de-defensa-presenta-protocolo-contra-la-discriminacion" target="_blank">Fuente: Ministerio de Defensa de Chile</a></p>
 </article>
 
-</section>
-
+  </section>
+  
 <a href="#top" id="btnTop" class="btn-float" title="Volver arriba">↑</a>
 
 <footer>
@@ -528,9 +519,22 @@
 </footer>
 
 <script>
+  // Mostrar botón flotante
   const btn = document.getElementById("btnTop");
   window.addEventListener("scroll", () => {
     btn.classList.toggle("show", window.scrollY > 250);
+  });
+
+  // Buscador de biografías
+  const bioSearch = document.getElementById('bioSearch');
+  const bioLinks = document.querySelectorAll('#bioIndex a');
+
+  bioSearch.addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    bioLinks.forEach(link => {
+      const text = link.textContent.toLowerCase();
+      link.style.display = text.includes(query) ? 'block' : 'none';
+    });
   });
 </script>
 
