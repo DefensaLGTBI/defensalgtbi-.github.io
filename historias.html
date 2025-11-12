@@ -6,39 +6,25 @@
   <meta name="description" content="Defensa LGTBI+: visibilidad, igualdad y reconocimiento del colectivo LGTBI+ en las Fuerzas Armadas.">
   <meta name="keywords" content="LGTBI, militares, defensa, igualdad, diversidad, ejército, derechos, historia, España">
   <meta name="author" content="Defensa LGTBI+">
-  <title>Historias de Militares LGTBI+ Defensa LGTBI+</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="img/defensa_lgtbi_shield_128.png">
+  <title>Historias de Militares LGTBI+ | Defensa LGTBI+</title>
+  <link rel="icon" type="image/png" href="img/defensa_lgtbi_shield_128.png">
 
   <style>
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
-      padding: 0;
       background-color: #f4f4f2;
       color: #222;
       scroll-behavior: smooth;
     }
-
     header {
       background-color: #2b3a2c;
       color: white;
       padding: 30px 10px;
       text-align: center;
-      position: relative;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-      color: #d4af37;
-      text-shadow: 1px 1px 3px #000;
-    }
-
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.1em;
-      color: #cfd8cf;
-    }
+    header h1 { margin: 0; color: #d4af37; text-shadow: 1px 1px 3px #000; }
+    header p { margin: 5px 0 0; color: #cfd8cf; }
 
     nav {
       background-color: #4b6043;
@@ -47,65 +33,57 @@
       flex-wrap: wrap;
       padding: 10px;
     }
-
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      margin: 5px 15px;
+      margin: 6px 15px;
       transition: color 0.3s, transform 0.2s;
     }
+    nav a:hover { color: #d4af37; transform: scale(1.05); }
 
-    nav a:hover {
-      color: #d4af37;
-      transform: scale(1.05);
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+    section { padding: 40px 20px; max-width: 900px; margin: auto; }
 
     h2 {
       color: #2b3a2c;
       border-bottom: 3px solid #4b6043;
       padding-bottom: 10px;
-      margin-bottom: 20px;
       text-align: center;
     }
 
+    /* ÍNDICE visual */
     .indice {
-      background-color: #e6e6d8;
-      padding: 12px;
-      border-left: 5px solid #4b6043;
-      border-radius: 5px;
-      margin-bottom: 25px;
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       gap: 10px;
-      justify-content: center;
+      margin: 25px 0 35px;
+      background-color: #e6e6d8;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-
     .indice strong {
-      width: 100%;
+      grid-column: 1 / -1;
       text-align: center;
       color: #2b3a2c;
+      margin-bottom: 8px;
+      font-size: 1.1em;
     }
-
     .indice a {
-      color: #2b3a2c;
-      text-decoration: none;
-      font-weight: bold;
       background-color: #f7f7f0;
-      padding: 4px 8px;
-      border-radius: 5px;
-      transition: background-color 0.2s;
+      border: 2px solid #4b6043;
+      border-radius: 8px;
+      padding: 8px;
+      text-align: center;
+      text-decoration: none;
+      color: #2b3a2c;
+      font-weight: bold;
+      transition: background-color 0.2s, transform 0.1s;
     }
-
     .indice a:hover {
       background-color: #d4af37;
       color: white;
+      transform: translateY(-2px);
     }
 
     article {
@@ -115,10 +93,44 @@
       margin-bottom: 18px;
       border-radius: 5px;
     }
+    article h3 { margin-top: 0; color: #2b3a2c; }
+    article a { color: #2b3a2c; font-weight: bold; }
+    article a:hover { color: #b8942c; }
 
-    article h3 {
-      margin-top: 0;
-      color: #2b3a2c;
+    footer {
+      background-color: #2b3a2c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+
+    /* Botón flotante */
+    .btn-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #d4af37;
+      color: white;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      text-decoration: none;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease, transform 0.2s ease;
+      z-index: 9999;
+    }
+    .btn-float.show { opacity: 1; pointer-events: auto; }
+    .btn-float:hover {
+      background-color: #b8942c;
+      transform: translateY(-3px);
     }
 
     .btn-donar {
@@ -128,79 +140,43 @@
       padding: 8px 14px;
       border-radius: 8px;
       text-decoration: none;
-      transition: background-color 0.3s, transform 0.2s;
     }
-
-    .btn-donar:hover {
-      background-color: #b8942c;
-      transform: translateY(-2px);
-    }
-
-    footer {
-      background-color: #2b3a2c;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-      margin-top: 40px;
-    }
-
-    /* BOTÓN FLOTANTE */
-    .btn-float {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background-color: #d4af37;
-      color: white;
-      padding: 12px 16px;
-      border-radius: 50%;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-      font-size: 20px;
-      z-index: 9999;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.4s ease, transform 0.2s ease;
-    }
-
-    .btn-float.show {
-      opacity: 1;
-      pointer-events: auto;
-      transform: translateY(0);
-    }
-
-    .btn-float:hover {
-      background-color: #b8942c;
-      transform: translateY(-2px);
-    }
+    .btn-donar:hover { background-color: #b8942c; }
 
     @media (max-width: 600px) {
-      .btn-float {
-        bottom: 15px;
-        right: 15px;
-        font-size: 18px;
-      }
+      .indice { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+      .btn-float { bottom: 15px; right: 15px; }
     }
-
   </style>
 </head>
 
 <body id="top">
 
-  <header>
-    <h1>Defensa LGTBI+</h1>
-    <p>Historias de Militares LGTBI+</p>
-  </header>
+<header>
+  <h1>Defensa LGTBI+</h1>
+  <p>Historias de Militares LGTBI+</p>
+</header>
 
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="legislacion.html">Legislación</a>
-    <a href="historias.html">Historias</a>
-    <a href="obras.html">Obras</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="donaciones.html" class="btn-donar">💛 Donar</a>
-  </nav>
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="legislacion.html">Legislación</a>
+  <a href="historias.html">Historias</a>
+  <a href="obras.html">Obras</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="donaciones.html" class="btn-donar">💛 Donar</a>
+</nav>
+
+<section>
+  <h2>Biografías de militares LGTBI+ a lo largo de la historia</h2>
+
+  <div class="indice">
+    <strong>Explora las biografías:</strong>
+    <a href="#bio1">1–10</a>
+    <a href="#bio11">11–20</a>
+    <a href="#bio21">21–30</a>
+    <a href="#bio31">31–40</a>
+    <a href="#top">↑ Volver arriba</a>
+  </div>
 
   <section>
 
@@ -492,23 +468,16 @@
 
 </section>
 
-<!-- Botón flotante que aparece al hacer scroll -->
-<a href="#top" class="btn-float" id="btnTop" title="Volver arriba">↑</a>
+<a href="#top" id="btnTop" class="btn-float" title="Volver arriba">↑</a>
 
 <footer>
   © 2025 Defensa LGTBI+ – Asociación por la Igualdad en las Fuerzas Armadas
 </footer>
 
 <script>
-  // Mostrar/ocultar botón flotante según scroll
   const btn = document.getElementById("btnTop");
-
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 250) {
-      btn.classList.add("show");
-    } else {
-      btn.classList.remove("show");
-    }
+    btn.classList.toggle("show", window.scrollY > 250);
   });
 </script>
 
