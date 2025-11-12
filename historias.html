@@ -151,6 +151,19 @@
 </head>
 
 <body id="top">
+  
+<script>
+  const bioSearch = document.getElementById('bioSearch');
+  const bioLinks = document.querySelectorAll('#bioIndex a');
+
+  bioSearch.addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    bioLinks.forEach(link => {
+      const text = link.textContent.toLowerCase();
+      link.style.display = text.includes(query) ? 'block' : 'none';
+    });
+  });
+</script>
 
 <header>
   <h1>Defensa LGTBI+</h1>
@@ -167,50 +180,104 @@
 </nav>
 
  <h2>Biografías de militares LGTBI+ a lo largo de la historia</h2>
- 
+
+  <input type="text" id="bioSearch" placeholder="Buscar por nombre, país o número..." class="bio-search">
+  .bio-search {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 15px auto 25px auto;
+  padding: 10px 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.bio-search:focus {
+  outline: none;
+  border-color: #4b6043;
+  box-shadow: 0 0 6px rgba(75, 96, 67, 0.3);
+}
+
+/* --- Índice de biografías tipo tarjetas --- */
+.bio-index {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.bio-index a {
+  display: block;
+  background: #f7f7f0;
+  border: 2px solid #dcdcca;
+  border-radius: 10px;
+  padding: 10px 14px;
+  color: #2b3a2c;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.bio-index a:hover {
+  background: #d4af37;
+  color: white;
+  border-color: #b8942c;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .bio-index {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
   <div class="indice"> <strong>Ir a biografía:</strong> <a href="#bio1">1</a> <a href="#bio10">10</a> <a href="#bio20">20</a> <a href="#bio30">30</a> <a href="#bio40">40</a> </div>
-     
-  <a href="#bio1">1. Friedrich Wilhelm von Steuben</a>
-  <a href="#bio2">2. Albert D. J. Cashier</a>
-  <a href="#bio3">3. Ethel Mary Smyth</a>
-  <a href="#bio4">4. Margarethe Cammermeyer</a>
-  <a href="#bio5">5. Leonard Matlovich</a>
-  <a href="#bio6">6. Perry Watkins</a>
-  <a href="#bio7">7. James Stubblebine</a>
-  <a href="#bio8">8. Wim de Bruin</a>
-  <a href="#bio9">9. Deborah Sampson</a>
-  <a href="#bio10">10. James Wharton</a>
-  <a href="#bio11">11. Dan Choi</a>
-  <a href="#bio12">12. Chelsea Manning</a>
-  <a href="#bio13">13. Shereef Moustafa</a>
-  <a href="#bio14">14. Nitzan Levy</a>
-  <a href="#bio15">15. Patricia Campos Doménech</a>
-  <a href="#bio16">16. Alex Minsky</a>
-  <a href="#bio17">17. José Luis Ramírez</a>
-  <a href="#bio18">18. Sarah L. Blum</a>
-  <a href="#bio19">19. Craig Jones</a>
-  <a href="#bio20">20. Lucía Méndez</a>
-  <a href="#bio21">21. Céleste Moreau</a>
-  <a href="#bio22">22. Pedro Aravena</a>
-  <a href="#bio23">23. Martina Keller</a>
-  <a href="#bio24">24. Marcus McKenzie</a>
-  <a href="#bio25">25. Raúl Sánchez García</a>
-  <a href="#bio26">26. James Kirkpatrick</a>
-  <a href="#bio27">27. Ana López</a>
-  <a href="#bio28">28. Mark Thompson</a>
-  <a href="#bio29">29. Sophie Dubois</a>
-  <a href="#bio30">30. Erik Johansson</a>
-  <a href="#bio31">31. Tanya Domi</a>
-  <a href="#bio32">32. Darren Manzella</a>
-  <a href="#bio33">33. Miriam Ben-Shalom</a>
-  <a href="#bio34">34. Carl Wittman</a>
-  <a href="#bio35">35. Vincent Pompei</a>
-  <a href="#bio36">36. Samira Ghanem</a>
-  <a href="#bio37">37. Thomas H. Carpenter</a>
-  <a href="#bio38">38. Elena Rodríguez Patiño</a>
-  <a href="#bio39">39. Nathaniel Brooks</a>
-  <a href="#bio40">40. Claudia Méndez Rivera</a>
-</nav>
+  
+  <div class="bio-index" id="bioIndex">
+  <a href="#bio1">1. Friedrich Wilhelm von Steuben – Prusia / EE. UU.</a>
+  <a href="#bio2">2. Albert D. J. Cashier – Irlanda / EE. UU.</a>
+  <a href="#bio3">3. Ethel Mary Smyth – Reino Unido</a>
+  <a href="#bio4">4. Margarethe Cammermeyer – EE. UU.</a>
+  <a href="#bio5">5. Leonard Matlovich – EE. UU.</a>
+  <a href="#bio6">6. Perry Watkins – EE. UU.</a>
+  <a href="#bio7">7. James Stubblebine – Canadá</a>
+  <a href="#bio8">8. Wim de Bruin – Países Bajos</a>
+  <a href="#bio9">9. Deborah Sampson – EE. UU.</a>
+  <a href="#bio10">10. James Wharton – Reino Unido</a>
+  <a href="#bio11">11. Dan Choi – EE. UU.</a>
+  <a href="#bio12">12. Chelsea Manning – EE. UU.</a>
+  <a href="#bio13">13. Shereef Moustafa – Egipto</a>
+  <a href="#bio14">14. Nitzan Levy – Israel</a>
+  <a href="#bio15">15. Patricia Campos Doménech – España</a>
+  <a href="#bio16">16. Alex Minsky – EE. UU.</a>
+  <a href="#bio17">17. José Luis Ramírez – España</a>
+  <a href="#bio18">18. Sarah L. Blum – EE. UU.</a>
+  <a href="#bio19">19. Craig Jones – Reino Unido</a>
+  <a href="#bio20">20. Lucía Méndez – Argentina</a>
+  <a href="#bio21">21. Céleste Moreau – Francia</a>
+  <a href="#bio22">22. Pedro Aravena – Chile</a>
+  <a href="#bio23">23. Martina Keller – Alemania</a>
+  <a href="#bio24">24. Marcus McKenzie – Canadá</a>
+  <a href="#bio25">25. Raúl Sánchez García – España</a>
+  <a href="#bio26">26. James Kirkpatrick – Reino Unido</a>
+  <a href="#bio27">27. Ana López – España</a>
+  <a href="#bio28">28. Mark Thompson – EE. UU.</a>
+  <a href="#bio29">29. Sophie Dubois – Francia</a>
+  <a href="#bio30">30. Erik Johansson – Suecia</a>
+  <a href="#bio31">31. Tanya Domi – EE. UU.</a>
+  <a href="#bio32">32. Darren Manzella – EE. UU.</a>
+  <a href="#bio33">33. Miriam Ben-Shalom – EE. UU.</a>
+  <a href="#bio34">34. Carl Wittman – EE. UU.</a>
+  <a href="#bio35">35. Vincent Pompei – EE. UU.</a>
+  <a href="#bio36">36. Samira Ghanem – Líbano</a>
+  <a href="#bio37">37. Thomas H. Carpenter – EE. UU.</a>
+  <a href="#bio38">38. Elena Rodríguez Patiño – España</a>
+  <a href="#bio39">39. Nathaniel Brooks – Reino Unido</a>
+  <a href="#bio40">40. Claudia Méndez Rivera – Chile</a>
+</div>
 
   <article id="bio1">
     <h3>1. Friedrich Wilhelm von Steuben (1730–1794) – Prusia / EE. UU.</h3>
