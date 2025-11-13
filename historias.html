@@ -229,6 +229,58 @@
     <a href="#bio60">60</a>
   </div>
 
+  <!-- 🔎 BUSCADOR DE OBRAS -->
+<h2>Catálogo de Obras LGTBI+ en el ámbito militar</h2>
+
+<input type="text" id="obraSearch" placeholder="Buscar por título o autor..." class="obra-search">
+
+<style>
+  .obra-search {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto 25px auto;
+    padding: 10px 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .obra-search:focus {
+    outline: none;
+    border-color: #4b6043;
+    box-shadow: 0 0 6px rgba(75, 96, 67, 0.3);
+  }
+
+  /* Animación suave al mostrar/ocultar obras */
+  .obra-hidden {
+    display: none !important;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('obraSearch');
+    const obras = document.querySelectorAll('section article');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+
+      obras.forEach(obra => {
+        const text = obra.textContent.toLowerCase();
+        if (text.includes(query)) {
+          obra.classList.remove('obra-hidden');
+        } else {
+          obra.classList.add('obra-hidden');
+        }
+      });
+    });
+  });
+</script>
+
   <div class="bio-index" id="bioIndex">
   <a href="#bio1">1. Friedrich Wilhelm von Steuben – Prusia / EE. UU.</a>
   <a href="#bio2">2. Albert D. J. Cashier – Irlanda / EE. UU.</a>
