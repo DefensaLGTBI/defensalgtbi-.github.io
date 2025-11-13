@@ -247,11 +247,10 @@
     text-align: center;
     transition: border-color 0.3s, box-shadow 0.3s;
   }
-  .obra-search:focus {
-    outline: none;
-    border-color: #4b6043;
-    box-shadow: 0 0 6px rgba(75, 96, 67, 0.3);
-  }
+.obra-search:focus {
+  border-color: #2b3a2c;
+  box-shadow: 0 0 6px rgba(43, 58, 44, 0.3);
+}
 
   /* Animación suave al mostrar/ocultar obras */
   .obra-hidden {
@@ -260,26 +259,6 @@
     transition: opacity 0.3s ease;
   }
 </style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.getElementById('obraSearch');
-    const obras = document.querySelectorAll('section article');
-
-    searchInput.addEventListener('input', () => {
-      const query = searchInput.value.toLowerCase();
-
-      obras.forEach(obra => {
-        const text = obra.textContent.toLowerCase();
-        if (text.includes(query)) {
-          obra.classList.remove('obra-hidden');
-        } else {
-          obra.classList.add('obra-hidden');
-        }
-      });
-    });
-  });
-</script>
 
   <div class="bio-index" id="bioIndex">
   <a href="#bio1">1. Friedrich Wilhelm von Steuben – Prusia / EE. UU.</a>
@@ -753,6 +732,25 @@
   © 2025 Defensa LGTBI+ – Asociación por la Igualdad en las Fuerzas Armadas
 </footer>
 
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('obraSearch');
+    const obras = document.querySelectorAll('section article');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+
+      obras.forEach(obra => {
+        const text = obra.textContent.toLowerCase();
+        if (text.includes(query)) {
+          obra.classList.remove('obra-hidden');
+        } else {
+          obra.classList.add('obra-hidden');
+        }
+      });
+    });
+  });
+</script>
 <script>
   // Mostrar botón flotante
   const btn = document.getElementById("btnTop");
