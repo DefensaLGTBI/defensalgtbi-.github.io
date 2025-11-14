@@ -738,17 +738,18 @@
     btn.classList.toggle("show", window.scrollY > 250);
   });
 
-  // Buscador de biografías
-  const bioSearch = document.getElementById('bioSearch');
-  const bioLinks = document.querySelectorAll('#bioIndex a');
+const searchInput = document.getElementById("bioSearch");
+const bios = document.querySelectorAll("#biografias article");
 
-  bioSearch.addEventListener('input', function () {
-    const query = this.value.toLowerCase();
-    bioLinks.forEach(link => {
-      const text = link.textContent.toLowerCase();
-      link.style.display = text.includes(query) ? 'block' : 'none';
-    });
-  });
+
+searchInput.addEventListener("input", () => {
+const term = searchInput.value.toLowerCase();
+bios.forEach(b => {
+const visible = b.innerText.toLowerCase().includes(term);
+b.classList.toggle("bio-hidden", !visible);
+});
+});
+
 </script>
 
 </body>
