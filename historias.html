@@ -674,6 +674,30 @@
     });
   });
 </script>
+<script>
+  const searchInput = document.getElementById('bioSearch');
+  const bioIndex = document.getElementById('bioIndex');
+  const bioLinks = bioIndex.getElementsByTagName('a');
 
+  searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+
+    // Mostrar u ocultar los enlaces según el texto buscado
+    Array.from(bioLinks).forEach(link => {
+      const text = link.textContent.toLowerCase();
+      if (text.includes(query)) {
+        link.style.display = 'block';
+      } else {
+        link.style.display = 'none';
+      }
+    });
+
+    // Opcional: si quieres hacer scroll al primer resultado visible automáticamente
+    const firstVisible = Array.from(bioLinks).find(link => link.style.display !== 'none');
+    if (firstVisible) {
+      firstVisible.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+</script>
 </body>
 </html>
