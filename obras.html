@@ -809,6 +809,25 @@
   </svg>
 </a>
 
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('obraSearch');
+    const obras = document.querySelectorAll('section article');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+
+      obras.forEach(obra => {
+        const text = obra.textContent.toLowerCase();
+        if (text.includes(query)) {
+          obra.classList.remove('obra-hidden');
+        } else {
+          obra.classList.add('obra-hidden');
+        }
+      });
+    });
+  });
+</script>
 <script>
   const btn = document.getElementById("btnTop");
   window.addEventListener("scroll", () => {
