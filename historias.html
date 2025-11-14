@@ -699,5 +699,25 @@
     }
   });
 </script>
+<a href="#top" class="btn-float" id="btnTop" title="Subir al inicio">↑</a>
+<script>
+  const btnTop = document.getElementById('btnTop');
+
+  // Mostrar/ocultar botón al hacer scroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) { // a partir de 300px de scroll
+      btnTop.classList.add('show');
+    } else {
+      btnTop.classList.remove('show');
+    }
+  });
+
+  // Scroll suave al hacer clic
+  btnTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
 </body>
 </html>
